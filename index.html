@@ -156,13 +156,20 @@
           <p>Respostas comuns a esse desafio tendem a enfatizar treinamento, letramento em prompting ou disseminação de boas práticas. Embora úteis em contextos individuais, essas estratégias apresentam limitações claras quando extrapoladas para uso organizacional em escala. Elas deslocam o ônus da mediação cognitiva para o usuário, reforçam desigualdades de expertise e tornam práticas críticas dependentes de tentativa e erro, dificultando padronização e governança (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>).</p>
           <p>A engenharia de prompts deve ser reformulada como um problema arquitetural e sociotécnico, no qual a governança da tradução assume papel central (<span class="cite" data-ref="Engestrom1987" tabindex="0">Engeström, 1987</span>; <span class="cite" data-ref="Bitner2008" tabindex="0">Bitner et al., 2008</span>). Em vez de tratar o prompt como artefato isolado, propõe-se compreender a interação baseada em prompts como um processo mediado por camadas intermediárias que interpretam, estruturam e normalizam intenções antes da execução pelo modelo. Essa perspectiva desloca o foco de outputs individuais para infraestruturas de tradução capazes de sustentar controle, auditabilidade e responsabilidade em serviços baseados em IA generativa.</p>
           <p>Para sustentar esse argumento, o trabalho introduz uma separação explícita entre <strong>Tradução (T)</strong> e <strong>Execução (E)</strong>. A Tradução corresponde à camada arquiteturalmente governável onde intenções humanas são interpretadas, refinadas e transformadas em instruções estruturadas. A Execução refere-se à geração probabilística realizada pelos modelos de linguagem, cuja variabilidade não pode ser totalmente eliminada, mas pode ser contextualizada e gerida (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Shen2023" tabindex="0">Shen et al., 2023</span>). Essa distinção permite analisar com maior precisão o que pode ser projetado e controlado sem confundir variabilidade de output com falha de design.</p>
+          <figure class="paper-figure">
+            <img src="images/fig-04.png" alt="A separação arquitetural entre Tradução (T) e Execução (E)" loading="lazy" width="3440" height="1920">
+            <figcaption>A separação arquitetural entre Tradução (T) e Execução (E)</figcaption>
+          </figure>
           <p>Este trabalho oferece três contribuições principais:</p>
           <ol class="body-list">
             <li>Um enquadramento conceitual que separa Tradução (T) de Execução (E) para analisar o que pode ser projetado, governado e auditado em serviços baseados em prompts, sem exigir determinismo irrealista da geração.</li>
             <li>Dois instrumentos analíticos derivados — SOP e GenAI Service Blueprint — que classificam funções de prompts por camadas de serviço e tornam visível a mediação entre usuários, organização e modelos.</li>
             <li>Um estudo de caso observacional de um Cognitive Prompt Middleware (CPM), incluindo uma instância baseline (Prompt Assistant) e variações arquiteturais, complementado por evidências aplicadas e um protocolo leve de validação.</li>
           </ol>
-          <p>A Seção 2 posiciona prompting como interação sociotécnica em HCI e discute o Golfo de Envisioning; a Seção 3 apresenta os instrumentos analíticos; a Seção 4 delimita capacidades e limites técnicos; a Seção 5 descreve o estudo de caso (CPM) e suas instâncias; a Seção 6 apresenta evidências aplicadas e um protocolo leve de validação; e a Seção 7 discute implicações, trade-offs e limites, antes da conclusão na Seção 8.</p>
+          <figure class="paper-figure">
+            <img src="images/fig-02.png" alt="O mito do prompt perfeito como competência individual" loading="lazy" width="3440" height="1920">
+            <figcaption>O mito do prompt perfeito como competência individual</figcaption>
+          </figure>
         </section>
 
         <!-- ── Seção 2 ── -->
@@ -184,6 +191,10 @@
               <li><strong>Lacuna de expectativa</strong>, na qual o usuário não sabe o que esperar de um sistema estocástico, especialmente em termos de variabilidade e confiabilidade dos outputs.</li>
             </ul>
             <p>Essas lacunas não são atribuídas a déficits cognitivos individuais, mas à ausência de mecanismos de mediação que tornem explícitas as capacidades do sistema, apoiem a formulação progressiva de instruções e ajudem a calibrar expectativas em relação ao comportamento probabilístico dos modelos. Em contextos organizacionais, onde erros têm consequências distribuídas e decisões precisam ser justificáveis, o Golfo de Envisioning torna-se particularmente crítico, comprometendo previsibilidade, controle e auditabilidade das interações (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Shen2023" tabindex="0">Shen et al., 2023</span>).</p>
+            <figure class="paper-figure">
+              <img src="images/fig-03.png" alt="O Golfo de Envisioning derruba o usuário antes da execução" loading="lazy" width="3440" height="1920">
+              <figcaption>O Golfo de Envisioning derruba o usuário antes da execução</figcaption>
+            </figure>
           </section>
 
           <section id="sec2-3" aria-labelledby="sec2-3-h">
@@ -219,6 +230,10 @@
             <h3 id="sec3-1-h">3.1 Da interação isolada ao serviço de IA generativa</h3>
             <p>Em ambientes organizacionais, interações com sistemas de IA generativa raramente ocorrem de forma isolada. Prompts são inseridos em fluxos de trabalho, reutilizados entre equipes, adaptados a políticas internas e condicionados por requisitos de rastreabilidade e controle. Nesses contextos, a interação baseada em prompts passa a operar como parte de um serviço, e não apenas como evento pontual entre usuário e modelo <span class="cite" data-ref="Bitner2008" tabindex="0">(Bitner et al., 2008)</span>.</p>
             <p>O Design de Serviço oferece instrumentos conceituais particularmente adequados para analisar esse deslocamento. Ao distinguir entre frontstage, backstage e linha de visibilidade, essa abordagem permite explicitar como decisões de interação, mediação e governança são distribuídas ao longo do serviço. Aplicada a sistemas de IA generativa, essa perspectiva evidencia a existência de uma camada intermediária de tradução, na qual intenções humanas são interpretadas, estruturadas e normalizadas antes da execução pelo modelo.</p>
+            <figure class="paper-figure">
+              <img src="images/fig-05.png" alt="Desenhando o Backstage da interação baseada em prompts" loading="lazy" width="3440" height="1920">
+              <figcaption>Desenhando o Backstage da interação baseada em prompts</figcaption>
+            </figure>
           </section>
 
           <section id="sec3-2" aria-labelledby="sec3-2-h">
@@ -305,6 +320,10 @@
               <li>Quais critérios são explicitados ou ocultados;</li>
               <li>Como responsabilidades são distribuídas entre usuários, organização e sistema.</li>
             </ul>
+            <figure class="paper-figure">
+              <img src="images/fig-11.png" alt="O GenAI Service Blueprint Completo" loading="lazy" width="3440" height="1920">
+              <figcaption>O GenAI Service Blueprint Completo</figcaption>
+            </figure>
           </section>
 
           <section id="sec3-5" aria-labelledby="sec3-5-h">
@@ -381,6 +400,10 @@
             <h3 id="sec5-3-h">5.3 O CPM como instância arquitetural</h3>
             <p>O CPM (Cognitive Prompt Middleware) é uma instância arquitetural projetada para operar como camada intermediária de tradução entre usuários, organização e modelos de IA generativa. Implementado como um agente baseado em GPT em ambiente corporativo, o CPM centraliza funções de mediação identificadas pela SOP, incluindo contratos de interação, scaffolding cognitivo, controle e tradução de diretrizes organizacionais.</p>
             <p>O CPM não substitui o modelo subjacente nem altera seus mecanismos internos. Seu papel é estruturar a interação, tornando explícitas decisões que, em abordagens tradicionais, permanecem distribuídas entre prompts improvisados, conhecimento tácito e tentativa e erro individual. Essa centralização permite discutir governança da tradução como decisão arquitetural, e não como habilidade pessoal.</p>
+            <figure class="paper-figure">
+              <img src="images/fig-08.png" alt="O Scaffold Cognitivo em Ação (Raio-X da Tradução)" loading="lazy" width="3440" height="1920">
+              <figcaption>O Scaffold Cognitivo em Ação (Raio-X da Tradução)</figcaption>
+            </figure>
           </section>
 
           <section id="sec5-4" aria-labelledby="sec5-4-h">
@@ -391,6 +414,10 @@
               <li><strong>Prompt Tutor</strong> — projetado para introduzir fricção deliberada por meio de perguntas de refinamento, atuando como scaffold cognitivo;</li>
               <li><strong>SuperPrompt Assistant</strong> — orientado a tarefas complexas e de baixa tolerância a erro, com alto grau de governança e controle estrutural.</li>
             </ul>
+            <figure class="paper-figure">
+              <img src="images/fig-07.png" alt="O valor contra-intuitivo da Fricção Deliberada" loading="lazy" width="3440" height="1920">
+              <figcaption>O valor contra-intuitivo da Fricção Deliberada</figcaption>
+            </figure>
             <p>Essas instâncias não representam uma progressão de maturidade nem uma hierarquia de qualidade, mas variações arquiteturais adequadas a diferentes contextos de uso.</p>
           </section>
 
@@ -442,6 +469,10 @@
                 </tbody>
               </table>
             </div>
+            <figure class="paper-figure">
+              <img src="images/fig-09.png" alt="Implementando a Tradução: O Cognitive Prompt Middleware (CPM)" loading="lazy" width="3440" height="1920">
+              <figcaption>Implementando a Tradução: O Cognitive Prompt Middleware (CPM)</figcaption>
+            </figure>
           </section>
 
           <section id="sec5-6" aria-labelledby="sec5-6-h">
@@ -502,6 +533,10 @@
         <section id="sec7" aria-labelledby="sec7-h">
           <h2 id="sec7-h">7. Discussão: implicações arquiteturais e sociotécnicas da governança da tradução</h2>
           <p>Esta seção discute as implicações conceituais e práticas dos achados apresentados, articulando o enquadramento teórico, os instrumentos analíticos e o estudo de caso do CPM. O objetivo não é extrapolar resultados empíricos nem propor modelos prescritivos universais, mas interpretar o que significa tratar a tradução como camada governável em sistemas organizacionais de IA generativa, bem como os limites e riscos dessa abordagem (<span class="cite" data-ref="Engestrom2001" tabindex="0">Engeström, 2001</span>; <span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>).</p>
+          <figure class="paper-figure">
+            <img src="images/fig-10.png" alt="Diagnosticando sua maturidade em IA Generativa" loading="lazy" width="3440" height="1920">
+            <figcaption>Diagnosticando sua maturidade em IA Generativa</figcaption>
+          </figure>
 
           <section id="sec7-1" aria-labelledby="sec7-1-h">
             <h3 id="sec7-1-h">7.1 Prompting como decisão arquitetural</h3>
@@ -549,6 +584,10 @@
           <p>O estudo de caso observacional do CPM demonstrou a plausibilidade operacional dessa abordagem, ilustrando como diferentes escolhas arquiteturais — em termos de fricção, governança e autonomia — podem ser institucionalizadas em contextos reais de uso. Sem pretensão de generalização estatística ou prova causal, o caso reforçou que ganhos de previsibilidade, redução de retrabalho e maior clareza de responsabilidade podem emergir quando a tradução é tratada como camada explícita e governada (<span class="cite" data-ref="Engestrom2001" tabindex="0">Engeström, 2001</span>; <span class="cite" data-ref="Bennett2014" tabindex="0">Bennett &amp; Checkel, 2014</span>).</p>
           <p>Do ponto de vista prático, os resultados sugerem que organizações interessadas em adotar IA generativa de forma responsável devem deslocar investimentos exclusivos em treinamento individual para o design consciente de infraestruturas de tradução, capazes de apoiar externalização de intenção, reduzir variabilidade indesejada e tornar decisões auditáveis. Esse deslocamento não elimina incertezas inerentes à execução probabilística, mas cria condições para reconhecê-las, documentá-las e geri-las de forma explícita.</p>
           <p>Por fim, o trabalho reconhece limitações importantes. A análise é situada, dependente de um contexto organizacional específico e de instrumentos analíticos que não pretendem esgotar a diversidade de práticas possíveis. Pesquisas futuras podem explorar aplicações da governança da tradução em outros domínios, investigar seus efeitos de longo prazo sobre aprendizagem organizacional e examinar implicações éticas e políticas da centralização de decisões de mediação em sistemas de IA generativa. Ao deslocar o debate de "prompts melhores" para arquiteturas sociotécnicas de tradução governada, este trabalho busca contribuir para uma adoção mais reflexiva, responsável e sustentável da IA generativa em contextos organizacionais.</p>
+          <figure class="paper-figure">
+            <img src="images/fig-12.png" alt="O design consciente da infraestrutura de mediação" loading="lazy" width="3440" height="1920">
+            <figcaption>O design consciente da infraestrutura de mediação</figcaption>
+          </figure>
         </section>
 
         <!-- ── Anexo A ── -->

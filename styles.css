@@ -682,3 +682,41 @@ section[id],
 @media (min-width: 801px) {
   .toc-nav { max-height: none !important; opacity: 1 !important; pointer-events: auto !important; }
 }
+
+/* ── Paper figures (slide images) ── */
+.paper-figure {
+  margin: 2.25rem 0 2.75rem;
+  width: 100%;
+}
+.paper-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--rm);
+  border: 1px solid var(--border-light);
+  transition: border-color var(--tr);
+}
+.paper-figure figcaption {
+  font-family: var(--sans);
+  font-size: .74rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: .55rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+.paper-figure--hero {
+  margin: 0 0 3.5rem;
+}
+.paper-figure--hero img {
+  border-radius: var(--rl);
+  border-color: var(--border);
+}
+
+/* ── Spacing after lists ── */
+.body-list + p,
+.body-list + figure,
+.body-list + h4,
+.body-list + section {
+  margin-top: 1.75rem;
+}
