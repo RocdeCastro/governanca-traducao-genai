@@ -49,8 +49,7 @@ const REFS_MAP = Object.fromEntries(REFS.map(r => [r.id, r]));
 /* ── Theme ── */
 function initTheme() {
   const saved = localStorage.getItem('theme');
-  const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  applyTheme(saved || preferred);
+  applyTheme(saved || 'light');
 
   document.getElementById('themeToggle').addEventListener('click', () => {
     applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
