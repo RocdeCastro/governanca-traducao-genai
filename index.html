@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pré-print acadêmico: Governança da tradução em sistemas de IA generativa — Roc de Castro, 2026.">
+  <meta name="description" content="Pré-print: Governança da tradução em sistemas de IA generativa — Roc de Castro, 2026.">
   <meta property="og:title" content="Governança da tradução em sistemas de IA generativa">
   <meta property="og:description" content="Design de serviço e HCI para interações baseadas em prompts. Pesquisa independente em andamento.">
   <meta property="og:type" content="article">
@@ -41,18 +41,73 @@
           <li>
             <a href="#sec2" class="toc-link">2. Enquadramento teórico</a>
             <ul class="toc-sub">
-              <li><a href="#sec2-1" class="toc-link">2.1 Prompting como prática HCI</a></li>
+              <li><a href="#sec2-1" class="toc-link">2.1 Prompting em HCI</a></li>
               <li><a href="#sec2-2" class="toc-link">2.2 Golfo de Envisioning</a></li>
+              <li><a href="#sec2-3" class="toc-link">2.3 Hierarquias cognitivas</a></li>
+              <li><a href="#sec2-4" class="toc-link">2.4 Perspectiva sociotécnica</a></li>
+              <li><a href="#sec2-5" class="toc-link">2.5 Implicações</a></li>
             </ul>
           </li>
-          <li><a href="#sec3" class="toc-link">3. Instrumentos analíticos</a></li>
-          <li><a href="#sec4" class="toc-link">4. Capacidades técnicas</a></li>
-          <li><a href="#sec5" class="toc-link">5. Estudo de caso: CPM</a></li>
-          <li><a href="#sec6" class="toc-link">6. Evidências e protocolo</a></li>
-          <li><a href="#sec7" class="toc-link">7. Discussão e trade-offs</a></li>
+          <li>
+            <a href="#sec3" class="toc-link">3. Instrumentos analíticos</a>
+            <ul class="toc-sub">
+              <li><a href="#sec3-1" class="toc-link">3.1 Da interação ao serviço</a></li>
+              <li><a href="#sec3-2" class="toc-link">3.2 Taxonomia SOP</a></li>
+              <li><a href="#sec3-3" class="toc-link">3.3 Funções da SOP</a></li>
+              <li><a href="#sec3-4" class="toc-link">3.4 GenAI Service Blueprint</a></li>
+              <li><a href="#sec3-5" class="toc-link">3.5 SOP e Blueprint</a></li>
+              <li><a href="#sec3-6" class="toc-link">3.6 Limites dos instrumentos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#sec4" class="toc-link">4. Contexto técnico</a>
+            <ul class="toc-sub">
+              <li><a href="#sec4-1" class="toc-link">4.1 Controle e variabilidade</a></li>
+              <li><a href="#sec4-2" class="toc-link">4.2 Separação T/E</a></li>
+              <li><a href="#sec4-3" class="toc-link">4.3 Camadas de controle</a></li>
+              <li><a href="#sec4-4" class="toc-link">4.4 Limites técnicos</a></li>
+              <li><a href="#sec4-5" class="toc-link">4.5 Modelos como casos</a></li>
+              <li><a href="#sec4-6" class="toc-link">4.6 Implicações para design</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#sec5" class="toc-link">5. Estudo de caso: CPM</a>
+            <ul class="toc-sub">
+              <li><a href="#sec5-1" class="toc-link">5.1 Abordagem metodológica</a></li>
+              <li><a href="#sec5-2" class="toc-link">5.2 Separação analítica T/E</a></li>
+              <li><a href="#sec5-3" class="toc-link">5.3 CPM como instância</a></li>
+              <li><a href="#sec5-4" class="toc-link">5.4 Instâncias empíricas</a></li>
+              <li><a href="#sec5-5" class="toc-link">5.5 Critérios analíticos</a></li>
+              <li><a href="#sec5-6" class="toc-link">5.6 Evidência e limites</a></li>
+              <li><a href="#sec5-7" class="toc-link">5.7 Considerações finais</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#sec6" class="toc-link">6. Evidências aplicadas</a>
+            <ul class="toc-sub">
+              <li><a href="#sec6-1" class="toc-link">6.1 Custo de maturação</a></li>
+              <li><a href="#sec6-2" class="toc-link">6.2 Ganho em uso recorrente</a></li>
+              <li><a href="#sec6-3" class="toc-link">6.3 Adoção orgânica</a></li>
+              <li><a href="#sec6-4" class="toc-link">6.4 Protocolo de validação</a></li>
+              <li><a href="#sec6-5" class="toc-link">6.5 Limitações</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#sec7" class="toc-link">7. Discussão</a>
+            <ul class="toc-sub">
+              <li><a href="#sec7-1" class="toc-link">7.1 Prompting como decisão</a></li>
+              <li><a href="#sec7-2" class="toc-link">7.2 Fricção deliberada</a></li>
+              <li><a href="#sec7-3" class="toc-link">7.3 Governança e responsabilidade</a></li>
+              <li><a href="#sec7-4" class="toc-link">7.4 Implicações para Design</a></li>
+              <li><a href="#sec7-5" class="toc-link">7.5 Limites da abordagem</a></li>
+              <li><a href="#sec7-6" class="toc-link">7.6 Contribuições</a></li>
+            </ul>
+          </li>
           <li><a href="#sec8" class="toc-link">8. Conclusão</a></li>
-          <li><a href="#references" class="toc-link">9. Referências</a></li>
-          <li><a href="#bibtex" class="toc-link">10. Citação (BibTeX)</a></li>
+          <li><a href="#anexo-a" class="toc-link">Anexo A — Artefatos CPM</a></li>
+          <li><a href="#anexo-b" class="toc-link">Anexo B — Exemplos T/E</a></li>
+          <li><a href="#references" class="toc-link">Referências</a></li>
+          <li><a href="#bibtex" class="toc-link">Citação (BibTeX)</a></li>
         </ul>
       </nav>
     </aside>
@@ -64,9 +119,7 @@
           <span class="badge-dot" aria-hidden="true"></span>
           Pré-print · Pesquisa independente em andamento
         </div>
-        <h1 class="article-title">
-          Governança da tradução em sistemas de IA generativa: design de serviço e HCI para interações baseadas em prompts
-        </h1>
+        <h1 class="article-title">Governança da tradução em sistemas de IA generativa: design de serviço e HCI para interações baseadas em prompts</h1>
         <div class="article-meta">
           <span class="meta-author">Roc de Castro</span>
           <span class="meta-sep" aria-hidden="true">·</span>
@@ -86,9 +139,8 @@
       <section class="abstract-section" id="abstract" aria-labelledby="abstract-label">
         <h2 class="abstract-label" id="abstract-label">Abstract</h2>
         <div class="abstract-body">
-          <p>A ascensão da Inteligência Artificial Generativa (GenAI) marca uma descontinuidade relevante na história da Interação Humano-Computador (HCI): a linguagem natural deixa de ser apenas meio de comunicação inter-humana e passa a operar como mecanismo primário de controle computacional e orquestração de serviços. Nesse paradigma, a qualidade do que se obtém de um modelo não é determinada exclusivamente por "capacidade" do modelo, mas também pela qualidade da instrução que conecta intenção humana a execução probabilística, isto é, pela engenharia de prompts.</p>
-          <p>No entanto, quando tratada predominantemente como habilidade textual ou competência individual, essa prática mostra-se insuficiente para sustentar escalabilidade, governança e responsabilização em sistemas sociotécnicos organizacionais. Este trabalho argumenta que a engenharia de prompts deve ser reformulada como um problema arquitetural e sociotécnico, no qual a <strong>governança da tradução</strong> assume papel central no uso organizacional de GenAI.</p>
-          <p>Propõe-se uma separação explícita entre <strong>Tradução (T)</strong> — camada governável na qual intenções são interpretadas, estruturadas e restringidas — e <strong>Execução (E)</strong> — a geração probabilística realizada por modelos de linguagem. A distinção permite analisar com maior precisão o que pode ser projetado, controlado e auditado em sistemas baseados em prompts, sem confundir decisões arquiteturais com variabilidade de output.</p>
+          <p>A ascensão da Inteligência Artificial Generativa (GenAI) marca uma descontinuidade relevante na história da Interação Humano-Computador (HCI): a linguagem natural deixa de ser apenas meio de comunicação inter-humana e passa a operar como mecanismo primário de controle computacional e orquestração de serviços. Nesse paradigma, a qualidade do que se obtém de um modelo não é determinada exclusivamente por "capacidade" do modelo, mas também pela qualidade da instrução que conecta intenção humana a execução probabilística, isto é, pela engenharia de prompts. No entanto, quando tratada predominantemente como habilidade textual ou competência individual, essa prática mostra-se insuficiente para sustentar escalabilidade, governança e responsabilização em sistemas sociotécnicos organizacionais.</p>
+          <p>Este trabalho argumenta que a engenharia de prompts deve ser reformulada como um problema arquitetural e sociotécnico, no qual a <strong>governança da tradução</strong> assume papel central no uso organizacional de GenAI. Propõe-se uma separação explícita entre <strong>Tradução (T)</strong> — camada governável na qual intenções são interpretadas, estruturadas e restringidas — e <strong>Execução (E)</strong> — a geração probabilística realizada por modelos de linguagem. A distinção permite analisar com maior precisão o que pode ser projetado, controlado e auditado em sistemas baseados em prompts, sem confundir decisões arquiteturais com variabilidade de output.</p>
           <p>Para operacionalizar esse enquadramento, o trabalho apresenta dois instrumentos analíticos derivados: a <strong>Taxonomia de Prompt Orientada a Serviço (SOP)</strong> e o <strong>GenAI Service Blueprint</strong>, que classificam prompts por função no serviço e tornam visível a camada de tradução que media a relação entre usuários, organização e modelos. O argumento é ancorado em um estudo de caso observacional de um Cognitive Prompt Middleware (CPM) implementado como agente em ambiente corporativo, incluindo uma instância baseline (Prompt Assistant) e variações arquiteturais com diferentes níveis de fricção e governança.</p>
           <p>Sem pretensão de prova causal, o caso demonstra a plausibilidade operacional de institucionalizar a tradução como camada governada, tornando explícitos trade-offs entre controle, autonomia e previsibilidade em serviços organizacionais baseados em GenAI.</p>
         </div>
@@ -96,177 +148,657 @@
 
       <div class="article-body">
 
+        <!-- ── Seção 1 ── -->
         <section id="sec1" aria-labelledby="sec1-h">
           <h2 id="sec1-h">1. Introdução</h2>
-          <p class="placeholder-text">[Conteúdo a preencher]</p>
-          <p class="cite-demo"><em>Demonstração do sistema de citação — passe o cursor sobre as referências inline:</em> A relação entre intenção humana e output computacional é mediada por sistemas de signos que implicam design intencional <span class="cite" data-ref="Norman1988" tabindex="0">(Norman, 1988)</span>. O desalinhamento entre o que o usuário imagina e o que o sistema consegue produzir foi formalizado como Golfo de Envisioning no contexto de interações com LLMs <span class="cite" data-ref="Shen2023" tabindex="0">(Shen et al., 2023)</span>. Service blueprinting oferece uma técnica para tornar visível a camada oculta de mediação em serviços <span class="cite" data-ref="Bitner2008" tabindex="0">(Bitner et al., 2008)</span>.</p>
+          <p>Em contextos organizacionais, prompts deixaram de ser apenas "entradas textuais" e passaram a operar como pontos de acoplamento entre intenção humana, arquitetura do sistema e cadeias de responsabilidade. Por isso, falhas em interações baseadas em prompts raramente são apenas "falhas de escrita": elas se manifestam como retrabalho, inconsistência, risco e dificuldade de justificativa institucional. A rápida disseminação de sistemas de IA generativa em contextos organizacionais tem reposicionado a engenharia de prompts como prática central de interação humano–máquina. Em atividades que vão da análise de documentos à tomada de decisão assistida, prompts deixaram de ser apenas entradas textuais ocasionais e passaram a integrar serviços, fluxos de trabalho e cadeias de responsabilidade <span class="cite" data-ref="Weisz2024" tabindex="0">(Weisz et al., 2024)</span>. Nesse cenário, cresce a expectativa de que "escrever prompts melhores" seja suficiente para garantir qualidade, controle e eficiência no uso desses sistemas. Este trabalho sustenta que essa expectativa é insuficiente: em escala organizacional, o desempenho do prompting depende menos de habilidade individual e mais de mecanismos de mediação que tornem a tradução governável, rastreável e reutilizável.</p>
+          <p>Quando tratada predominantemente como habilidade textual ou competência individual, a engenharia de prompts mostra-se insuficiente para sustentar escalabilidade, governança e responsabilização em sistemas sociotécnicos complexos (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Engestrom2001" tabindex="0">Engeström, 2001</span>). Em ambientes organizacionais, a variabilidade de outputs, a dependência de conhecimento tácito e a dificuldade de auditoria revelam limites estruturais de abordagens centradas exclusivamente no usuário final <span class="cite" data-ref="Shen2023" tabindex="0">(Shen et al., 2023)</span>. Um dos fatores centrais desse problema é a dificuldade recorrente de usuários em transformar intenções vagas em instruções executáveis de forma consistente. A literatura recente em HCI descreve esse fenômeno como o Golfo de Envisioning: uma lacuna cognitiva específica de interações baseadas em prompts, distinta dos tradicionais golfos de execução e avaliação <span class="cite" data-ref="Shen2023" tabindex="0">(Shen et al., 2023)</span>.</p>
+          <p>Respostas comuns a esse desafio tendem a enfatizar treinamento, letramento em prompting ou disseminação de boas práticas. Embora úteis em contextos individuais, essas estratégias apresentam limitações claras quando extrapoladas para uso organizacional em escala. Elas deslocam o ônus da mediação cognitiva para o usuário, reforçam desigualdades de expertise e tornam práticas críticas dependentes de tentativa e erro, dificultando padronização e governança (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>).</p>
+          <p>A engenharia de prompts deve ser reformulada como um problema arquitetural e sociotécnico, no qual a governança da tradução assume papel central (<span class="cite" data-ref="Engestrom1987" tabindex="0">Engeström, 1987</span>; <span class="cite" data-ref="Bitner2008" tabindex="0">Bitner et al., 2008</span>). Em vez de tratar o prompt como artefato isolado, propõe-se compreender a interação baseada em prompts como um processo mediado por camadas intermediárias que interpretam, estruturam e normalizam intenções antes da execução pelo modelo. Essa perspectiva desloca o foco de outputs individuais para infraestruturas de tradução capazes de sustentar controle, auditabilidade e responsabilidade em serviços baseados em IA generativa.</p>
+          <p>Para sustentar esse argumento, o trabalho introduz uma separação explícita entre <strong>Tradução (T)</strong> e <strong>Execução (E)</strong>. A Tradução corresponde à camada arquiteturalmente governável onde intenções humanas são interpretadas, refinadas e transformadas em instruções estruturadas. A Execução refere-se à geração probabilística realizada pelos modelos de linguagem, cuja variabilidade não pode ser totalmente eliminada, mas pode ser contextualizada e gerida (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Shen2023" tabindex="0">Shen et al., 2023</span>). Essa distinção permite analisar com maior precisão o que pode ser projetado e controlado sem confundir variabilidade de output com falha de design.</p>
+          <p>Este trabalho oferece três contribuições principais:</p>
+          <ol class="body-list">
+            <li>Um enquadramento conceitual que separa Tradução (T) de Execução (E) para analisar o que pode ser projetado, governado e auditado em serviços baseados em prompts, sem exigir determinismo irrealista da geração.</li>
+            <li>Dois instrumentos analíticos derivados — SOP e GenAI Service Blueprint — que classificam funções de prompts por camadas de serviço e tornam visível a mediação entre usuários, organização e modelos.</li>
+            <li>Um estudo de caso observacional de um Cognitive Prompt Middleware (CPM), incluindo uma instância baseline (Prompt Assistant) e variações arquiteturais, complementado por evidências aplicadas e um protocolo leve de validação.</li>
+          </ol>
+          <p>A Seção 2 posiciona prompting como interação sociotécnica em HCI e discute o Golfo de Envisioning; a Seção 3 apresenta os instrumentos analíticos; a Seção 4 delimita capacidades e limites técnicos; a Seção 5 descreve o estudo de caso (CPM) e suas instâncias; a Seção 6 apresenta evidências aplicadas e um protocolo leve de validação; e a Seção 7 discute implicações, trade-offs e limites, antes da conclusão na Seção 8.</p>
         </section>
 
+        <!-- ── Seção 2 ── -->
         <section id="sec2" aria-labelledby="sec2-h">
           <h2 id="sec2-h">2. Enquadramento teórico: prompting como interação sociotécnica</h2>
+          <p>Esta seção posiciona a engenharia de prompts no campo da HCI e da análise de sistemas sociotécnicos, afastando leituras que a tratam como técnica isolada, habilidade linguística ou competência exclusivamente individual. O objetivo é demonstrar que os desafios observados no uso organizacional de sistemas de IA generativa decorrem menos de limitações técnicas dos modelos e mais de lacunas estruturais de mediação entre intenção humana, arquitetura do sistema e execução probabilística (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Engestrom1987" tabindex="0">Engeström, 1987</span>).</p>
+
           <section id="sec2-1" aria-labelledby="sec2-1-h">
             <h3 id="sec2-1-h">2.1 Prompting como prática de interação em HCI</h3>
-            <p class="placeholder-text">[Conteúdo a preencher]</p>
+            <p>Pesquisas recentes em HCI têm enfatizado que interações baseadas em prompts devem ser compreendidas como processos interativos, e não como comandos pontuais ou entradas estáticas. Nessa perspectiva, prompts operam como artefatos mediadores, moldando não apenas os outputs gerados, mas também expectativas, estratégias de uso, ciclos de iteração e percepções de controle por parte dos usuários <span class="cite" data-ref="Shen2023" tabindex="0">(Shen et al., 2023)</span>. Essa leitura desloca o foco da qualidade textual do prompt para as dinâmicas de interação estabelecidas ao longo do tempo. Em contextos organizacionais, no entanto, essas dinâmicas são atravessadas por prazos, responsabilidades institucionais, normas internas e riscos regulatórios. Como consequência, práticas de prompting baseadas em experimentação ad hoc tornam-se frágeis, difíceis de escalar e pouco compatíveis com exigências de governança e responsabilização <span class="cite" data-ref="Weisz2024" tabindex="0">(Weisz et al., 2024)</span>.</p>
           </section>
+
           <section id="sec2-2" aria-labelledby="sec2-2-h">
             <h3 id="sec2-2-h">2.2 O Golfo de Envisioning e as lacunas de mediação</h3>
-            <p class="placeholder-text">[Conteúdo a preencher]</p>
+            <p>Um conceito central para compreender essas fragilidades é o Golfo de Envisioning, proposto na literatura recente como uma lacuna cognitiva específica das interações baseadas em prompts com sistemas de IA generativa. Diferentemente dos tradicionais golfos de execução e avaliação, o Golfo de Envisioning refere-se às dificuldades que antecedem a interação propriamente dita, quando usuários precisam antecipar possibilidades, formular instruções e calibrar expectativas antes de qualquer resposta do sistema <span class="cite" data-ref="Shen2023" tabindex="0">(Shen et al., 2023)</span>. Esse golfo pode ser analisado como composto por três lacunas inter-relacionadas:</p>
+            <ul class="body-list">
+              <li><strong>Lacuna de capacidade</strong>, na qual o usuário não sabe o que é possível fazer com o sistema;</li>
+              <li><strong>Lacuna de instrução</strong>, na qual o usuário não sabe como pedir ou estruturar adequadamente a solicitação;</li>
+              <li><strong>Lacuna de expectativa</strong>, na qual o usuário não sabe o que esperar de um sistema estocástico, especialmente em termos de variabilidade e confiabilidade dos outputs.</li>
+            </ul>
+            <p>Essas lacunas não são atribuídas a déficits cognitivos individuais, mas à ausência de mecanismos de mediação que tornem explícitas as capacidades do sistema, apoiem a formulação progressiva de instruções e ajudem a calibrar expectativas em relação ao comportamento probabilístico dos modelos. Em contextos organizacionais, onde erros têm consequências distribuídas e decisões precisam ser justificáveis, o Golfo de Envisioning torna-se particularmente crítico, comprometendo previsibilidade, controle e auditabilidade das interações (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Shen2023" tabindex="0">Shen et al., 2023</span>).</p>
+          </section>
+
+          <section id="sec2-3" aria-labelledby="sec2-3-h">
+            <h3 id="sec2-3-h">2.3 Hierarquias cognitivas de prompting e limites do letramento</h3>
+            <p>Propostas recentes descrevem estratégias de prompting em níveis crescentes de estruturação e demanda cognitiva, organizando tipos de prompt em uma hierarquia que permite caracterizar a complexidade de tarefas e comparar abordagens de interação com LLMs. A Hierarchical Prompting Taxonomy (HPT), por exemplo, estrutura estratégias de prompting de forma hierárquica com base em princípios cognitivos e propõe instrumentos para avaliar a relação entre estratégia e exigência da tarefa <span class="cite" data-ref="HPT2024" tabindex="0">(Hierarchical Prompting Taxonomy, 2024)</span>.</p>
+            <p>Esses padrões, contudo, não devem ser interpretados como incapacidade individual. A própria literatura destaca que níveis mais altos de estruturação raramente emergem espontaneamente e dependem de scaffolding explícito, exemplos ou mediação fornecida pelo sistema. Na ausência desses mecanismos, usuários permanecem operando em níveis baixos da hierarquia, independentemente de sua experiência geral ou domínio do problema <span class="cite" data-ref="Shen2023" tabindex="0">(Shen et al., 2023)</span>. Embora a HPT seja útil para caracterizar demandas cognitivas, ela não aborda diretamente como essas estratégias se integram a serviços organizacionais, nem como se relacionam com decisões de governança, responsabilidade e escalabilidade — lacuna que reforça a necessidade dos instrumentos desenvolvidos na Seção 3.</p>
+          </section>
+
+          <section id="sec2-4" aria-labelledby="sec2-4-h">
+            <h3 id="sec2-4-h">2.4 Além do letramento individual: uma perspectiva sociotécnica</h3>
+            <p>Grande parte das respostas práticas aos desafios do prompting concentra-se em treinamento, disseminação de boas práticas ou aumento do letramento individual dos usuários. Embora essas abordagens possam melhorar a interação em nível local, elas apresentam limitações significativas em ambientes organizacionais, nos quais:</p>
+            <ul class="body-list">
+              <li>Usuários mudam com frequência;</li>
+              <li>O tempo disponível para aprendizagem é limitado;</li>
+              <li>Decisões precisam ser auditáveis e justificáveis;</li>
+              <li>Erros produzem efeitos institucionais distribuídos.</li>
+            </ul>
+            <p>Ao deslocar o problema para o indivíduo, essas estratégias ignoram o caráter sistêmico e sociotécnico da interação com IA generativa, reforçando desigualdades de expertise e tornando práticas críticas dependentes de conhecimento tácito e improvisação (<span class="cite" data-ref="Engestrom2001" tabindex="0">Engeström, 2001</span>; <span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>). Sob a perspectiva da Teoria da Atividade, interações baseadas em prompts devem ser compreendidas como parte de sistemas de atividade mais amplos, nos quais ferramentas, regras, divisão de trabalho e objetivos se articulam dinamicamente <span class="cite" data-ref="Engestrom1987" tabindex="0">(Engeström, 1987)</span>.</p>
+          </section>
+
+          <section id="sec2-5" aria-labelledby="sec2-5-h">
+            <h3 id="sec2-5-h">2.5 Implicações para a engenharia de prompts</h3>
+            <p>O enquadramento apresentado nesta seção sustenta a tese central do paper: a necessidade de camadas arquiteturais de mediação que apoiem a externalização da intenção, reduzam variabilidade indesejada e tornem governáveis práticas de prompting em escala organizacional. Em vez de depender exclusivamente do letramento individual, sistemas de IA generativa devem incorporar mecanismos que institucionalizem decisões de tradução e tornem explícitos critérios, restrições e expectativas. A seção seguinte apresenta dois instrumentos analíticos concebidos com esse objetivo: a Taxonomia de Prompt Orientada a Serviço (SOP) e o GenAI Service Blueprint.</p>
           </section>
         </section>
 
+        <!-- ── Seção 3 ── -->
         <section id="sec3" aria-labelledby="sec3-h">
-          <h2 id="sec3-h">3. Instrumentos analíticos: SOP e GenAI Service Blueprint</h2>
-          <p class="placeholder-text">[Conteúdo a preencher]</p>
+          <h2 id="sec3-h">3. Instrumentos analíticos: taxonomia de prompt orientada a serviço (SOP) e GenAI Service Blueprint</h2>
+          <p>Esta seção apresenta os instrumentos analíticos utilizados ao longo do artigo para examinar práticas de prompting em contextos organizacionais. Diferentemente de frameworks normativos ou métodos prescritivos, esses instrumentos são concebidos como lentes analíticas derivadas, voltadas a tornar visíveis dimensões estruturais frequentemente ocultas nas interações baseadas em prompts. Ambos operam em continuidade com o enquadramento sociotécnico discutido na Seção 2, articulando contribuições de HCI, Teoria da Atividade e Design de Serviço (<span class="cite" data-ref="Engestrom1987" tabindex="0">Engeström, 1987</span>; <span class="cite" data-ref="Bitner2008" tabindex="0">Bitner et al., 2008</span>).</p>
 
-          <h3>Tabela 1 — Taxonomia de Prompt Orientada a Serviço (SOP)</h3>
-          <div class="table-wrapper">
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Tipo de Prompt</th>
-                  <th>Função no Serviço</th>
-                  <th>Camada T/E</th>
-                  <th>Visibilidade ao Usuário</th>
-                  <th>Auditabilidade</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>System Prompt</strong></td>
-                  <td>Definição de persona, restrições e escopo do agente</td>
-                  <td>T</td>
-                  <td>Oculto</td>
-                  <td>Alta (versionável)</td>
-                </tr>
-                <tr>
-                  <td><strong>Prompt de Orquestração</strong></td>
-                  <td>Sequência e lógica de chamadas entre componentes</td>
-                  <td>T</td>
-                  <td>Oculto</td>
-                  <td>Alta</td>
-                </tr>
-                <tr>
-                  <td><strong>Prompt de Usuário</strong></td>
-                  <td>Instrução direta do utilizador final</td>
-                  <td>E (entrada)</td>
-                  <td>Explícito</td>
-                  <td>Média (logs)</td>
-                </tr>
-                <tr>
-                  <td><strong>Meta-prompt</strong></td>
-                  <td>Instrução sobre como estruturar outras instruções</td>
-                  <td>T</td>
-                  <td>Parcialmente oculto</td>
-                  <td>Alta</td>
-                </tr>
-                <tr>
-                  <td><strong>Prompt de Validação</strong></td>
-                  <td>Checagem de conformidade de outputs</td>
-                  <td>T</td>
-                  <td>Oculto</td>
-                  <td>Alta</td>
-                </tr>
-                <tr>
-                  <td><strong>Prompt de Recuperação (RAG)</strong></td>
-                  <td>Injeção de contexto via retrieval</td>
-                  <td>T</td>
-                  <td>Oculto</td>
-                  <td>Média</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <section id="sec3-1" aria-labelledby="sec3-1-h">
+            <h3 id="sec3-1-h">3.1 Da interação isolada ao serviço de IA generativa</h3>
+            <p>Em ambientes organizacionais, interações com sistemas de IA generativa raramente ocorrem de forma isolada. Prompts são inseridos em fluxos de trabalho, reutilizados entre equipes, adaptados a políticas internas e condicionados por requisitos de rastreabilidade e controle. Nesses contextos, a interação baseada em prompts passa a operar como parte de um serviço, e não apenas como evento pontual entre usuário e modelo <span class="cite" data-ref="Bitner2008" tabindex="0">(Bitner et al., 2008)</span>.</p>
+            <p>O Design de Serviço oferece instrumentos conceituais particularmente adequados para analisar esse deslocamento. Ao distinguir entre frontstage, backstage e linha de visibilidade, essa abordagem permite explicitar como decisões de interação, mediação e governança são distribuídas ao longo do serviço. Aplicada a sistemas de IA generativa, essa perspectiva evidencia a existência de uma camada intermediária de tradução, na qual intenções humanas são interpretadas, estruturadas e normalizadas antes da execução pelo modelo.</p>
+          </section>
+
+          <section id="sec3-2" aria-labelledby="sec3-2-h">
+            <h3 id="sec3-2-h">3.2 Taxonomia de Prompt Orientada a Serviço (SOP)</h3>
+            <p>A Taxonomia de Prompt Orientada a Serviço (SOP) é proposta como um instrumento analítico para classificar prompts segundo a função que desempenham dentro de um serviço baseado em IA generativa, e não segundo sua forma textual ou complexidade linguística. Inspirada pela lógica do service blueprint e pela análise sociotécnica de sistemas de atividade, a SOP organiza prompts em relação a três grandes camadas: frontstage, linha de visibilidade e backstage (<span class="cite" data-ref="Bitner2008" tabindex="0">Bitner et al., 2008</span>; <span class="cite" data-ref="Engestrom1987" tabindex="0">Engeström, 1987</span>). Essa organização não implica hierarquia de qualidade nem prescrição de boas práticas, mas oferece uma estrutura para descrever e comparar arquiteturas de prompting em contextos organizacionais.</p>
+
+            <h4>Tabela 1 — SOP: funções de prompts por camada de serviço</h4>
+            <div class="table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Camada de Serviço</th>
+                    <th>Função do Prompt (SOP)</th>
+                    <th>Descrição Analítica</th>
+                    <th>Exemplo Abstrato</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Frontstage</strong></td>
+                    <td>Disparo de execução</td>
+                    <td>Prompt que aciona diretamente a geração de output, com mínima mediação e baixa explicitação de critérios ou restrições</td>
+                    <td>"Resuma este documento."</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Frontstage</strong></td>
+                    <td>Solicitação orientada a objetivo</td>
+                    <td>Prompt que expressa uma intenção explícita, mas delega ao modelo a definição de critérios, estrutura e abordagem</td>
+                    <td>"Explique este processo para um cliente."</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Linha de Visibilidade</strong></td>
+                    <td>Contrato de interação</td>
+                    <td>Prompt que explicita objetivo, formato, escopo e limites esperados do output, tornando critérios visíveis ao usuário</td>
+                    <td>"Compare X e Y destacando diferenças operacionais em formato de tabela."</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Backstage</strong></td>
+                    <td>Scaffold cognitivo</td>
+                    <td>Prompt que estrutura, refina ou externaliza a intenção do usuário antes da execução</td>
+                    <td>"Antes de responder, identifique os critérios relevantes para a comparação."</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Backstage</strong></td>
+                    <td>Controle e validação</td>
+                    <td>Prompt que impõe regras, checagens ou restrições à geração, reduzindo variabilidade indesejada</td>
+                    <td>"Verifique consistência interna e evite inferências não justificadas."</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Backstage</strong></td>
+                    <td>Mediação organizacional</td>
+                    <td>Prompt que traduz políticas, normas ou diretrizes institucionais em instruções executáveis</td>
+                    <td>"Aplique diretrizes internas de conformidade ao formular a resposta."</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Backstage</strong></td>
+                    <td>Orquestração de execução</td>
+                    <td>Prompt que coordena múltiplas etapas ou subtarefas antes da geração do output final</td>
+                    <td>"Divida a tarefa em etapas e execute cada uma sequencialmente."</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="sec3-3" aria-labelledby="sec3-3-h">
+            <h3 id="sec3-3-h">3.3 Funções analíticas da SOP</h3>
+            <p>A análise proposta pela SOP permite identificar, entre outras, as seguintes funções recorrentes de prompts em serviços de IA generativa:</p>
+            <ul class="body-list">
+              <li><strong>Disparo de execução</strong>, no qual o prompt aciona diretamente a geração de output, com mínima mediação;</li>
+              <li><strong>Contrato de interação</strong>, no qual objetivos, formatos e limites são explicitados;</li>
+              <li><strong>Scaffold cognitivo</strong>, no qual a intenção do usuário é estruturada ou refinada antes da execução;</li>
+              <li><strong>Controle e validação</strong>, no qual regras, checagens ou restrições são impostas à geração;</li>
+              <li><strong>Mediação organizacional</strong>, no qual políticas, normas ou diretrizes institucionais são traduzidas em instruções executáveis.</li>
+            </ul>
+            <p>Ao identificar essas funções, a SOP torna visíveis decisões arquiteturais que frequentemente permanecem implícitas na interação textual. Essa visibilidade é crucial para discutir governança, responsabilidade e escalabilidade, pois permite distinguir entre variabilidade inerente à execução probabilística e escolhas deliberadas de mediação e controle <span class="cite" data-ref="Norman1988" tabindex="0">(Norman, 1988)</span>.</p>
+          </section>
+
+          <section id="sec3-4" aria-labelledby="sec3-4-h">
+            <h3 id="sec3-4-h">3.4 GenAI Service Blueprint</h3>
+            <p>Complementarmente à SOP, o GenAI Service Blueprint estende o blueprint clássico do Design de Serviço para contemplar especificidades dos sistemas de IA generativa. Em particular, ele explicita a camada de tradução situada entre a intenção do usuário e a execução pelo modelo, articulando ações visíveis, processos de bastidores e mecanismos de governança <span class="cite" data-ref="Bitner2008" tabindex="0">(Bitner et al., 2008)</span>. Ao mapear onde e como a tradução ocorre, o GenAI Service Blueprint permite discutir questões como:</p>
+            <ul class="body-list">
+              <li>Em que pontos decisões são tomadas;</li>
+              <li>Quais critérios são explicitados ou ocultados;</li>
+              <li>Como responsabilidades são distribuídas entre usuários, organização e sistema.</li>
+            </ul>
+          </section>
+
+          <section id="sec3-5" aria-labelledby="sec3-5-h">
+            <h3 id="sec3-5-h">3.5 Relação entre SOP e GenAI Service Blueprint</h3>
+            <p>Embora distintos, a SOP e o GenAI Service Blueprint operam de forma complementar. Enquanto a SOP classifica funções de prompts no interior do serviço, o blueprint explicita processos e relações entre camadas, atores e artefatos. Juntos, esses instrumentos permitem analisar não apenas o que os prompts fazem, mas onde e como suas funções se articulam na arquitetura do serviço. No caso do CPM (Seção 5), a SOP e o GenAI Service Blueprint foram usados como lentes para identificar (i) funções predominantes de prompting por instância e (ii) onde a camada de tradução se posiciona entre frontstage e backstage. Recortes ilustrativos de outputs comparáveis para um mesmo input estão nos Anexos B.</p>
+          </section>
+
+          <section id="sec3-6" aria-labelledby="sec3-6-h">
+            <h3 id="sec3-6-h">3.6 Limites e escopo dos instrumentos</h3>
+            <p>É importante ressaltar que tanto a SOP quanto o GenAI Service Blueprint são instrumentos analíticos situados. Eles não pretendem esgotar a diversidade de práticas de prompting, nem prescrever arquiteturas ideais. Seu valor reside em oferecer uma linguagem comum para descrever, comparar e discutir decisões arquiteturais em serviços de IA generativa, especialmente em contextos organizacionais onde governança e responsabilização são centrais <span class="cite" data-ref="Engestrom2001" tabindex="0">(Engeström, 2001)</span>.</p>
+          </section>
         </section>
 
+        <!-- ── Seção 4 ── -->
         <section id="sec4" aria-labelledby="sec4-h">
-          <h2 id="sec4-h">4. Capacidades e limites técnicos relevantes para governança</h2>
-          <p class="placeholder-text">[Conteúdo a preencher]</p>
+          <h2 id="sec4-h">4. Contexto técnico: controle, governança e limites dos modelos de IA generativa</h2>
+          <p>Esta seção delimita o contexto técnico no qual a governança da tradução se torna não apenas desejável, mas possível. O objetivo não é descrever modelos específicos em detalhe, nem comparar desempenhos, mas explicitar quais capacidades técnicas tornam analisável e projetável a camada de tradução, bem como quais limites permanecem intrínsecos à execução probabilística dos sistemas de IA generativa (<span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>; <span class="cite" data-ref="Shen2023" tabindex="0">Shen et al., 2023</span>).</p>
+
+          <section id="sec4-1" aria-labelledby="sec4-1-h">
+            <h3 id="sec4-1-h">4.1 Controle comportamental e variabilidade probabilística</h3>
+            <p>Modelos contemporâneos de linguagem de grande escala operam por meio de processos estocásticos que produzem variabilidade inerente nos outputs. Essa característica não deve ser interpretada como falha técnica, mas como propriedade fundamental desses sistemas. É importante distinguir, contudo, entre controle do comportamento do modelo e controle do resultado específico. Enquanto o primeiro pode ser influenciado por instruções, parâmetros e estruturas de interação, o segundo permanece essencialmente probabilístico. Confundir essas duas dimensões leva a expectativas irreais de determinismo e a avaliações equivocadas de falhas em sistemas baseados em IA generativa <span class="cite" data-ref="Norman1988" tabindex="0">(Norman, 1988)</span>. Consequentemente, o papel do design e da governança é reduzir incertezas evitáveis por meio de contratos, restrições e validações na Tradução (T), e tornar explícitas as incertezas remanescentes na Execução (E), em vez de prometer eliminação completa de variabilidade.</p>
+          </section>
+
+          <section id="sec4-2" aria-labelledby="sec4-2-h">
+            <h3 id="sec4-2-h">4.2 A separação entre Tradução (T) e Execução (E)</h3>
+            <p>A distinção proposta neste trabalho entre Tradução (T) e Execução (E) oferece um enquadramento analítico para lidar com essa tensão entre controle e variabilidade. A Tradução corresponde à camada na qual intenções humanas são interpretadas, estruturadas e normalizadas em instruções compatíveis com a lógica do sistema. Essa camada é arquiteturalmente governável, pois envolve decisões explícitas de design, regras, contratos de interação e mediações institucionais. A Execução, por sua vez, refere-se ao processamento realizado pelo modelo de linguagem, caracterizado por geração probabilística e sensibilidade a fatores contextuais. Essa separação permite deslocar esforços de governança para a camada onde o controle é efetivamente possível, sem exigir determinismo da geração (<span class="cite" data-ref="Shen2023" tabindex="0">Shen et al., 2023</span>; <span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>).</p>
+            <p class="info-note"><strong>Nota:</strong> Neste trabalho, "auditabilidade" refere-se primariamente à rastreabilidade e justificabilidade das decisões na camada de Tradução (T) — critérios, contratos, restrições e validações aplicadas —, e não à explicação causal de por que um modelo específico gerou um output particular na Execução (E).</p>
+          </section>
+
+          <section id="sec4-3" aria-labelledby="sec4-3-h">
+            <h3 id="sec4-3-h">4.3 Camadas de controle e governança na interação</h3>
+            <p>Do ponto de vista técnico, sistemas de IA generativa contemporâneos operam a partir de múltiplas camadas de controle, que incluem instruções persistentes, parâmetros de sistema, restrições de conteúdo e mecanismos de validação. Quando essas capacidades são tratadas apenas como configurações técnicas, perde-se a oportunidade de analisá-las como decisões sociotécnicas. Ao serem incorporadas à camada de Tradução, essas decisões tornam-se visíveis, discutíveis e passíveis de governança, permitindo que organizações explicitem critérios, responsabilidades e limites de uso (<span class="cite" data-ref="Engestrom2001" tabindex="0">Engeström, 2001</span>; <span class="cite" data-ref="Bitner2008" tabindex="0">Bitner et al., 2008</span>).</p>
+          </section>
+
+          <section id="sec4-4" aria-labelledby="sec4-4-h">
+            <h3 id="sec4-4-h">4.4 Limites técnicos e riscos de interpretação</h3>
+            <p>Apesar desses avanços, é fundamental reconhecer os limites técnicos dos sistemas de IA generativa. A execução permanece sensível a variações de contexto, dados de treinamento e formulação das instruções. Além disso, a opacidade parcial dos modelos dificulta explicações causais diretas sobre outputs específicos, reforçando a necessidade de cautela na atribuição de responsabilidade (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>). Nesse sentido, tratar prompts ou configurações de sistema como garantias de comportamento determinístico constitui um risco conceitual e prático. A governança da tradução não elimina incertezas, mas as desloca para um espaço onde podem ser reconhecidas, documentadas e geridas.</p>
+          </section>
+
+          <section id="sec4-5" aria-labelledby="sec4-5-h">
+            <h3 id="sec4-5-h">4.5 O papel de modelos específicos como casos expressivos</h3>
+            <p>Este trabalho recorre a modelos contemporâneos de IA generativa como casos expressivos que tornam visíveis capacidades e limites relevantes para a análise proposta. Essa escolha não implica dependência ontológica de um modelo específico, nem a suposição de que os instrumentos analíticos apresentados sejam válidos apenas para determinada tecnologia. Ao contrário, o foco permanece na camada de tradução, que pode ser projetada, governada e adaptada independentemente da evolução dos modelos subjacentes <span class="cite" data-ref="Shen2023" tabindex="0">(Shen et al., 2023)</span>.</p>
+          </section>
+
+          <section id="sec4-6" aria-labelledby="sec4-6-h">
+            <h3 id="sec4-6-h">4.6 Implicações para o design de serviços baseados em IA generativa</h3>
+            <p>Ao explicitar capacidades e limites técnicos, esta seção reforça a necessidade de tratar a engenharia de prompts como parte do design de serviços, e não como ajuste periférico. A possibilidade de condicionar comportamento sem garantir determinismo exige arquiteturas que tornem visíveis decisões de tradução, distribuam responsabilidades e reduzam dependência de improvisação individual. A Seção 5 descreve como essa distinção entre Tradução e Execução é operacionalizada no estudo de caso do CPM.</p>
+          </section>
         </section>
 
+        <!-- ── Seção 5 ── -->
         <section id="sec5" aria-labelledby="sec5-h">
-          <h2 id="sec5-h">5. Estudo de caso: Cognitive Prompt Middleware (CPM)</h2>
-          <p class="placeholder-text">[Conteúdo a preencher]</p>
+          <h2 id="sec5-h">5. Metodologia e estudo de caso: CPM (Cognitive Prompt Middleware)</h2>
+          <p>Esta seção descreve a abordagem metodológica adotada no trabalho e apresenta o CPM (Cognitive Prompt Middleware) como estudo de caso observacional. O objetivo não é avaliar desempenho comparativo de modelos nem demonstrar causalidade estatística, mas examinar a plausibilidade operacional de institucionalizar a tradução como camada governada em serviços organizacionais baseados em IA generativa (<span class="cite" data-ref="Engestrom1987" tabindex="0">Engeström, 1987</span>; <span class="cite" data-ref="Bennett2014" tabindex="0">Bennett &amp; Checkel, 2014</span>).</p>
 
-          <h3>Exemplo — System prompt do Prompt Assistant (instância baseline)</h3>
-          <div class="code-block">
-            <button class="copy-btn" aria-label="Copiar código">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-              <span class="copy-text">Copiar</span>
-            </button>
-            <pre><code># Papel
-Você é um assistente especializado em otimização de prompts para modelos de linguagem
-de grande escala (LLMs). Seu papel é apoiar profissionais a estruturar, melhorar e
-governar prompts utilizados em contextos organizacionais.
+          <section id="sec5-1" aria-labelledby="sec5-1-h">
+            <h3 id="sec5-1-h">5.1 Abordagem metodológica</h3>
+            <p>O estudo adota uma abordagem qualitativa e observacional, inspirada em princípios de análise sociotécnica e process tracing leve. Em vez de isolar variáveis ou medir outputs de forma quantitativa, a análise concentra-se em como práticas de prompting são organizadas, mediadas e governadas em um contexto real de uso organizacional <span class="cite" data-ref="Engestrom2001" tabindex="0">(Engeström, 2001)</span>. A análise combina:</p>
+            <ol class="body-list">
+              <li>Observação situada do uso do CPM em tarefas de curadoria;</li>
+              <li>Rastros agregados de uso (volume de conversas ao longo do período de adoção);</li>
+              <li>Evidências aplicadas de esforço e economia reportadas no recorte de uso recorrente;</li>
+              <li>Artefatos de interação (metaprompts/outputs) utilizados como material ilustrativo para tornar visível a camada de Tradução (T).</li>
+            </ol>
+            <p class="info-note"><strong>Nota metodológica:</strong> Por restrições de confidencialidade, não reportamos conteúdo sensível nem estimativas de usuários únicos; e distinguimos explicitamente "conversa" de "contrato de tradução estabilizado". Evidências empíricas são utilizadas de forma contextual, como suporte à argumentação conceitual, e não como prova conclusiva de eficácia <span class="cite" data-ref="Bennett2014" tabindex="0">(Bennett &amp; Checkel, 2014)</span>.</p>
+          </section>
 
-# Escopo
-- Analise o prompt fornecido pelo usuário
-- Identifique lacunas de especificidade, ambiguidades e riscos de output não determinístico
-- Proponha uma versão estruturada com: papel, contexto, instrução, formato de saída
-  e restrições
-- Classifique o prompt na Taxonomia SOP (System / Orchestration / User / Meta / Validation)
+          <section id="sec5-2" aria-labelledby="sec5-2-h">
+            <h3 id="sec5-2-h">5.2 Separação analítica entre Tradução (T) e Execução (E)</h3>
+            <p>A análise metodológica é estruturada a partir da separação explícita entre Tradução (T) e Execução (E), introduzida na Seção 1 e justificada tecnicamente na Seção 4. A Tradução corresponde à camada na qual decisões de mediação, estruturação da intenção, imposição de critérios e incorporação de políticas são tomadas. Essa camada é considerada arquiteturalmente governável, pois envolve escolhas explícitas de design e pode ser documentada, auditada e ajustada. A Execução refere-se à geração probabilística realizada pelo modelo de linguagem — embora parâmetros e instruções possam influenciar seu comportamento, não é tratada como espaço primário de governança, mas como componente cujo comportamento deve ser contextualizado e gerido (<span class="cite" data-ref="Shen2023" tabindex="0">Shen et al., 2023</span>; <span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>).</p>
+          </section>
 
-# Restrições
-- Não execute a tarefa descrita no prompt — apenas otimize a instrução
-- Mantenha a intenção original do usuário; não substitua objetivos
-- Sinalize quando um prompt solicitar capacidades além do escopo do modelo
+          <section id="sec5-3" aria-labelledby="sec5-3-h">
+            <h3 id="sec5-3-h">5.3 O CPM como instância arquitetural</h3>
+            <p>O CPM (Cognitive Prompt Middleware) é uma instância arquitetural projetada para operar como camada intermediária de tradução entre usuários, organização e modelos de IA generativa. Implementado como um agente baseado em GPT em ambiente corporativo, o CPM centraliza funções de mediação identificadas pela SOP, incluindo contratos de interação, scaffolding cognitivo, controle e tradução de diretrizes organizacionais.</p>
+            <p>O CPM não substitui o modelo subjacente nem altera seus mecanismos internos. Seu papel é estruturar a interação, tornando explícitas decisões que, em abordagens tradicionais, permanecem distribuídas entre prompts improvisados, conhecimento tácito e tentativa e erro individual. Essa centralização permite discutir governança da tradução como decisão arquitetural, e não como habilidade pessoal.</p>
+          </section>
 
-# Formato de saída
-Retorne um objeto JSON com os campos:
-{
-  "tipo_sop": "[classificação SOP]",
-  "lacunas_identificadas": ["..."],
-  "prompt_otimizado": "...",
-  "justificativa": "..."
-}</code></pre>
-          </div>
+          <section id="sec5-4" aria-labelledby="sec5-4-h">
+            <h3 id="sec5-4-h">5.4 Instâncias empíricas do CPM</h3>
+            <p>Para explorar diferentes trade-offs arquiteturais, o CPM foi implementado em três instâncias empíricas, cada uma enfatizando escolhas distintas em termos de fricção interacional, grau de governança e autonomia do usuário:</p>
+            <ul class="body-list">
+              <li><strong>Prompt Assistant (2024)</strong> — concebido como baseline de tradução governada, com baixa fricção e foco em eficiência operacional;</li>
+              <li><strong>Prompt Tutor</strong> — projetado para introduzir fricção deliberada por meio de perguntas de refinamento, atuando como scaffold cognitivo;</li>
+              <li><strong>SuperPrompt Assistant</strong> — orientado a tarefas complexas e de baixa tolerância a erro, com alto grau de governança e controle estrutural.</li>
+            </ul>
+            <p>Essas instâncias não representam uma progressão de maturidade nem uma hierarquia de qualidade, mas variações arquiteturais adequadas a diferentes contextos de uso.</p>
+          </section>
 
-          <h3>Exemplo — Output estruturado do CPM</h3>
-          <div class="code-block">
-            <button class="copy-btn" aria-label="Copiar código">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-              <span class="copy-text">Copiar</span>
-            </button>
-            <pre><code>{
-  "tipo_sop": "User → otimizado para System",
-  "lacunas_identificadas": [
-    "Ausência de papel explícito para o modelo",
-    "Formato de saída não especificado",
-    "Nenhuma restrição de escopo definida"
-  ],
-  "prompt_otimizado": "Você é um analista de dados sênior. Dado o conjunto de dados
-    CSV fornecido, gere um relatório executivo em português com: (1) principais
-    tendências, (2) anomalias detectadas, (3) recomendações priorizadas. Formato:
-    JSON com campos 'tendencias', 'anomalias', 'recomendacoes'. Limite: 500 palavras
-    por campo.",
-  "justificativa": "O prompt original ('analise esses dados') carecia de papel,
-    formato e escopo. A versão otimizada reduz variabilidade de output e torna o
-    resultado auditável."
-}</code></pre>
-          </div>
+          <section id="sec5-5" aria-labelledby="sec5-5-h">
+            <h3 id="sec5-5-h">5.5 Critérios analíticos e comparação entre instâncias</h3>
+            <p>A comparação entre as instâncias do CPM é conduzida a partir de critérios derivados da SOP e do enquadramento sociotécnico do trabalho.</p>
+            <h4>Tabela 2 — Comparação entre instâncias do CPM</h4>
+            <div class="table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Critério</th>
+                    <th>Prompt Assistant</th>
+                    <th>Prompt Tutor</th>
+                    <th>SuperPrompt Assistant</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Papel arquitetural</strong></td>
+                    <td>Baseline de tradução governada</td>
+                    <td>Scaffold cognitivo com fricção deliberada</td>
+                    <td>Tradução de alta governança</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Funções SOP predominantes</strong></td>
+                    <td>Contrato de interação; orquestração básica</td>
+                    <td>Scaffold cognitivo; contrato de interação</td>
+                    <td>Contrato de interação; controle e validação; mediação organizacional</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Fricção interacional</strong></td>
+                    <td>Baixa</td>
+                    <td>Alta (intencional)</td>
+                    <td>Baixa–média</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Governança explícita</strong></td>
+                    <td>Média</td>
+                    <td>Média–alta</td>
+                    <td>Alta</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Uso observado</strong></td>
+                    <td>Tarefas operacionais e exploratórias; eficiência e padronização; redução de variação superficial</td>
+                    <td>Tarefas abertas ou mal especificadas; clarificação de intenção; aprendizagem; redução de ambiguidade</td>
+                    <td>Tarefas complexas e multi-etapa; baixa tolerância a erro; previsibilidade estrutural; controle institucional</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="sec5-6" aria-labelledby="sec5-6-h">
+            <h3 id="sec5-6-h">5.6 Evidência empírica e limites da análise</h3>
+            <p>O uso do CPM em ambiente organizacional permitiu observar redução de retrabalho, maior previsibilidade estrutural e economia significativa de tempo em tarefas complexas. Os resultados são mencionados como evidência empírica contextual, e não como prova quantitativa controlada. O estudo não busca estabelecer relações causais nem generalizar resultados para outros contextos sem mediação adicional. O valor do estudo reside em demonstrar que a governança da tradução pode ser operacionalizada na prática, e não em medir sua eficácia relativa em termos absolutos <span class="cite" data-ref="Bennett2014" tabindex="0">(Bennett &amp; Checkel, 2014)</span>.</p>
+          </section>
+
+          <section id="sec5-7" aria-labelledby="sec5-7-h">
+            <h3 id="sec5-7-h">5.7 Considerações metodológicas finais</h3>
+            <p>Ao combinar separação analítica entre Tradução e Execução, instrumentos analíticos derivados (SOP e GenAI Service Blueprint) e um estudo de caso observacional, a metodologia adotada permite examinar práticas reais de prompting sob uma lente arquitetural e sociotécnica. Essa abordagem privilegia clareza conceitual, transparência de decisões e plausibilidade operacional, preparando o terreno para a discussão das implicações mais amplas apresentada na seção seguinte.</p>
+          </section>
         </section>
 
+        <!-- ── Seção 6 ── -->
         <section id="sec6" aria-labelledby="sec6-h">
-          <h2 id="sec6-h">6. Evidências aplicadas e protocolo de validação</h2>
-          <p class="placeholder-text">[Conteúdo a preencher]</p>
+          <h2 id="sec6-h">6. Evidências aplicadas: custo de maturação (T), ganho em uso recorrente e gate de validação</h2>
+          <p>Esta seção apresenta evidências aplicadas situadas e um protocolo leve de validação que sustentam a tese central do trabalho: em contextos organizacionais, ganhos com GenAI não dependem apenas da capacidade do modelo nem do letramento individual em prompting, mas da governança da tradução — isto é, de uma camada (T) que estrutura intenção, explicita critérios e impõe restrições antes da Execução (E). As métricas e procedimentos abaixo devem ser lidos como evidência aplicada situada, sem pretensão de inferência causal isolada ou generalização estatística.</p>
+
+          <section id="sec6-1" aria-labelledby="sec6-1-h">
+            <h3 id="sec6-1-h">6.1 Custo de maturação (Tradução, T): ~4 horas por prompt</h3>
+            <p>Na curadoria, um custo relevante não está apenas na execução do modelo, mas no tempo e esforço até estabilizar um prompt confiável e consistente — aqui entendido como um contrato de interação (papel, objetivo, restrições, passos e formato) cujo output se torna comparável ao baseline humano sob critérios definidos e apresenta menor variabilidade quando executado sob configurações do modelo definidas pelo serviço.</p>
+            <p>Esse ponto corresponde à maturidade da Tradução (T): o momento em que o contrato fica suficientemente especificado para reduzir refinamentos adicionais e permitir reuso consistente em tarefas equivalentes. Em agentes de curadoria, estimamos uma redução média de <strong>~4 horas por prompt</strong>, considerando o esforço total de criação e maturação (iterações, validações e ajustes) no fluxo de trabalho.</p>
+            <p class="info-note"><strong>Nota:</strong> Esse valor descreve o custo de "fabricar" a infraestrutura do serviço (T), e não o efeito acumulado em uso recorrente (E).</p>
+          </section>
+
+          <section id="sec6-2" aria-labelledby="sec6-2-h">
+            <h3 id="sec6-2-h">6.2 Ganho em uso recorrente: economia após o prompt estar pronto</h3>
+            <p>Uma vez que o contrato de Tradução (T) está estabilizado, observa-se um segundo tipo de benefício: a economia acumulada após o prompt já estar maduro e passar a ser aplicado repetidamente no trabalho de curadoria. No total de 2025, foram <strong>1.132 horas de curadoria economizadas</strong>. Esses ganhos se concentram em atividades de curadoria de bases de conhecimento para atendimento bancário — como análise e comparação de conteúdos, reescrita de procedimentos, rotulação de bases fixas e avaliação da qualidade das respostas geradas — e se acumulam justamente porque o contrato já opera como infraestrutura do serviço, reduzindo retrabalho e variabilidade operacional.</p>
+          </section>
+
+          <section id="sec6-3" aria-labelledby="sec6-3-h">
+            <h3 id="sec6-3-h">6.3 Adoção orgânica em escala (proxy de institucionalização)</h3>
+            <p>No ambiente corporativo com ChatGPT Enterprise, o Prompt Assistant acumulou <strong>1.180 conversas</strong> ao longo de aproximadamente 1 ano e 10 meses, com adoção orgânica — isto é, sem ações formais de evangelização ou campanhas estruturadas de engajamento. Não estimamos usuários únicos neste recorte; utilizamos o volume de conversas e a continuidade do uso como proxy de adoção e de institucionalização da prática.</p>
+            <p class="info-note"><strong>Nota metodológica:</strong> Embora a redução média de esforço na maturação de prompts seja observável em agentes de curadoria, não é metodologicamente adequado escalá-la diretamente pelo volume de conversas, porque "conversa" não equivale a "criação e maturação completa de um prompt contract". Este trabalho não estima esse total por ausência de instrumentação que conecte conversas a contratos efetivamente estabilizados.</p>
+          </section>
+
+          <section id="sec6-4" aria-labelledby="sec6-4-h">
+            <h3 id="sec6-4-h">6.4 Protocolo de validação antes de democratizar prompts/agentes</h3>
+            <p>Antes de democratizar um prompt como "agente" para os times, adotamos um protocolo leve de validação orientado a dois critérios complementares: <strong>autoconsistência</strong> e <strong>concordância com gabarito</strong>.</p>
+            <ul class="body-list">
+              <li><strong>Consistente (autoconsistência):</strong> baixa variação da marcação ao executar N vezes sob as mesmas condições;</li>
+              <li><strong>Confiável (gabarito):</strong> alta concordância com golden answer, medida por acurácia simples por item;</li>
+              <li><strong>Baseline humano:</strong> múltiplos humanos executam a mesma tarefa para estimar variabilidade e concordância sob os mesmos critérios;</li>
+              <li><strong>N adaptativo por criticidade:</strong> começamos com N=10 e reduzimos (até N=3) apenas em tarefas de menor criticidade quando a estabilidade se mantém sob a configuração de aleatoriedade do modelo.</li>
+            </ul>
+            <p>O objetivo não é "provar determinismo", mas verificar se o contrato de Tradução (T) estabilizado produz execuções (E) mais comparáveis e menos variáveis do que a prática ad hoc, reduzindo risco e retrabalho ao escalar o uso.</p>
+            <p class="info-note"><strong>Nota editorial:</strong> Thresholds internos variam por tarefa; publicamos aqui o método (governança), não os placares específicos de cada solução.</p>
+          </section>
+
+          <section id="sec6-5" aria-labelledby="sec6-5-h">
+            <h3 id="sec6-5-h">6.5 Limitações (transparência deliberada)</h3>
+            <p>As métricas acima devem ser lidas como evidência aplicada situada. Não estimamos usuários únicos/áreas no recorte de adoção; e a economia de horas reportada refere-se ao uso recorrente em 2025, não implicando, por si só, causalidade isolada ou generalização para outros fluxos sem mediação.</p>
+            <p>Ainda assim, o conjunto — redução de tempo de maturação + economia em uso recorrente + adoção orgânica + validação por autoconsistência/gabarito com N adaptativo — fornece suporte coerente à tese de que governar Tradução (T) é condição para escalar GenAI com previsibilidade e auditabilidade em serviços organizacionais. Os resultados sustentam a plausibilidade operacional do argumento: existe um custo identificável de maturação de T, há ganhos acumulados quando T vira infraestrutura reutilizável, e práticas de validação podem funcionar como gate de governança antes de democratizar agentes.</p>
+          </section>
         </section>
 
+        <!-- ── Seção 7 ── -->
         <section id="sec7" aria-labelledby="sec7-h">
-          <h2 id="sec7-h">7. Discussão, implicações e trade-offs</h2>
-          <p class="placeholder-text">[Conteúdo a preencher]</p>
+          <h2 id="sec7-h">7. Discussão: implicações arquiteturais e sociotécnicas da governança da tradução</h2>
+          <p>Esta seção discute as implicações conceituais e práticas dos achados apresentados, articulando o enquadramento teórico, os instrumentos analíticos e o estudo de caso do CPM. O objetivo não é extrapolar resultados empíricos nem propor modelos prescritivos universais, mas interpretar o que significa tratar a tradução como camada governável em sistemas organizacionais de IA generativa, bem como os limites e riscos dessa abordagem (<span class="cite" data-ref="Engestrom2001" tabindex="0">Engeström, 2001</span>; <span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>).</p>
+
+          <section id="sec7-1" aria-labelledby="sec7-1-h">
+            <h3 id="sec7-1-h">7.1 Prompting como decisão arquitetural</h3>
+            <p>Um dos principais resultados conceituais deste trabalho é o deslocamento do prompting de uma prática operacional localizada para uma decisão arquitetural distribuída. A análise conduzida por meio da SOP e do GenAI Service Blueprint evidencia que prompts exercem funções distintas em diferentes camadas do serviço, influenciando controle, previsibilidade e responsabilidade de formas que não podem ser compreendidas apenas pela análise do texto do prompt em si <span class="cite" data-ref="Bitner2008" tabindex="0">(Bitner et al., 2008)</span>. Sob essa perspectiva, a qualidade de uma interação baseada em prompts não depende apenas da formulação linguística, mas da arquitetura de mediação na qual essa formulação está inserida. Essa leitura reforça a inadequação de abordagens que tratam a engenharia de prompts como habilidade individual isolada, especialmente em contextos organizacionais onde decisões têm efeitos distribuídos e precisam ser justificáveis <span class="cite" data-ref="Norman1988" tabindex="0">(Norman, 1988)</span>.</p>
+          </section>
+
+          <section id="sec7-2" aria-labelledby="sec7-2-h">
+            <h3 id="sec7-2-h">7.2 Fricção deliberada como estratégia de mediação</h3>
+            <p>O estudo de caso do CPM mostra que a introdução de fricção deliberada pode desempenhar papel produtivo na governança da tradução. Diferentemente de fricções acidentais ou decorrentes de falhas de usabilidade, a fricção deliberada é projetada para apoiar a externalização progressiva da intenção, reduzindo ambiguidades antes da execução pelo modelo. Essa estratégia dialoga diretamente com o Golfo de Envisioning, ao oferecer mecanismos que ajudam usuários a compreender o que é possível, como pedir e o que esperar de sistemas estocásticos <span class="cite" data-ref="Shen2023" tabindex="0">(Shen et al., 2023)</span>. No Prompt Tutor, por exemplo, perguntas de refinamento não têm como objetivo ensinar "bons prompts", mas redistribuir o esforço cognitivo para um momento anterior à execução, reduzindo retrabalho e variabilidade indesejada.</p>
+            <p>Contudo, a fricção não é universalmente desejável. A comparação entre instâncias do CPM indica que níveis mais altos de fricção são adequados a tarefas abertas ou exploratórias, enquanto tarefas de baixa tolerância a erro se beneficiam de arquiteturas com maior governança e menor exigência de intervenção do usuário. Essa observação reforça a necessidade de tratar fricção como parâmetro arquitetural contextual, e não como valor intrínseco.</p>
+          </section>
+
+          <section id="sec7-3" aria-labelledby="sec7-3-h">
+            <h3 id="sec7-3-h">7.3 Governança da tradução e responsabilidade sociotécnica</h3>
+            <p>Ao institucionalizar a tradução como camada governada, sistemas organizacionais de IA generativa tornam explícitas decisões que, de outra forma, permaneceriam implícitas ou distribuídas entre indivíduos. Essa explicitação tem implicações diretas para responsabilidade sociotécnica, pois permite documentar critérios, justificar escolhas e delimitar responsabilidades entre usuários, organização e sistema <span class="cite" data-ref="Engestrom1987" tabindex="0">(Engeström, 1987)</span>. A separação entre Tradução (T) e Execução (E) é central nesse processo. Ao reconhecer que a execução permanece probabilística e parcialmente opaca, a governança da tradução desloca expectativas de controle para a camada onde decisões podem efetivamente ser projetadas e auditadas. Isso reduz o risco de atribuir falhas sistêmicas a usuários ou de exigir determinismo irrealista de modelos estocásticos (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Weisz2024" tabindex="0">Weisz et al., 2024</span>).</p>
+          </section>
+
+          <section id="sec7-4" aria-labelledby="sec7-4-h">
+            <h3 id="sec7-4-h">7.4 Implicações para o Design de Serviço</h3>
+            <p>Do ponto de vista do Design de Serviço, os resultados deste trabalho reforçam a necessidade de tratar sistemas de IA generativa como serviços sociotécnicos completos, e não como ferramentas isoladas. A incorporação da SOP e do GenAI Service Blueprint evidencia como prompts, políticas, contratos de interação e mecanismos de controle se articulam ao longo do serviço, atravessando frontstage e backstage <span class="cite" data-ref="Bitner2008" tabindex="0">(Bitner et al., 2008)</span>. Isso amplia o papel do design, deslocando-o da interface para a orquestração de camadas invisíveis que sustentam a interação. Em termos práticos, SOP e GenAI Service Blueprint oferecem uma linguagem comum para decidir onde posicionar tradução, validações e políticas no serviço, reduzindo dependência de improviso individual e facilitando governança explícita.</p>
+          </section>
+
+          <section id="sec7-5" aria-labelledby="sec7-5-h">
+            <h3 id="sec7-5-h">7.5 Limites da abordagem e riscos conceituais</h3>
+            <p>Apesar de suas contribuições, a abordagem proposta apresenta limites que devem ser reconhecidos. A institucionalização da tradução pode introduzir rigidez excessiva se aplicada de forma indiscriminada, reduzindo autonomia do usuário ou inibindo exploração criativa. Além disso, a centralização de decisões de tradução pode concentrar poder e responsabilidade em artefatos técnicos, exigindo atenção cuidadosa a processos de revisão e accountability organizacional. Há também o risco de reificar instrumentos analíticos — como a SOP — como frameworks normativos, contrariando sua intenção original. Para evitar esse risco, é fundamental que esses instrumentos sejam utilizados como ferramentas de leitura e reflexão, e não como prescrições universais de design <span class="cite" data-ref="Engestrom2001" tabindex="0">(Engeström, 2001)</span>.</p>
+          </section>
+
+          <section id="sec7-6" aria-labelledby="sec7-6-h">
+            <h3 id="sec7-6-h">7.6 Contribuições e posicionamento do trabalho</h3>
+            <p>À luz dessas discussões, as principais contribuições deste trabalho podem ser sintetizadas em três pontos:</p>
+            <ol class="body-list">
+              <li>A reformulação da engenharia de prompts como problema arquitetural e sociotécnico, e não apenas linguístico;</li>
+              <li>A proposição de instrumentos analíticos que tornam visível a camada de tradução em serviços de IA generativa;</li>
+              <li>A demonstração empírica situada da plausibilidade de governar a tradução por meio de arquiteturas intermediárias como o CPM.</li>
+            </ol>
+            <p>Essas contribuições posicionam o trabalho no cruzamento entre HCI, Design de Serviço e estudos sociotécnicos, oferecendo uma base conceitual para pesquisas futuras e para práticas organizacionais mais responsáveis no uso de IA generativa.</p>
+          </section>
         </section>
 
+        <!-- ── Seção 8 ── -->
         <section id="sec8" aria-labelledby="sec8-h">
           <h2 id="sec8-h">8. Conclusão</h2>
-          <p class="placeholder-text">[Conteúdo a preencher]</p>
+          <p>Este trabalho partiu da constatação de que a crescente centralidade da engenharia de prompts no uso organizacional de sistemas de IA generativa tem sido acompanhada por um enquadramento conceitual limitado, que privilegia habilidades individuais e ajustes linguísticos em detrimento de decisões arquiteturais e sociotécnicas. Como contribuição central, o paper propôs a reformulação do prompting como um problema de governança da tradução, deslocando o foco da qualidade do texto do prompt para a arquitetura de mediação que antecede a execução probabilística dos modelos.</p>
+          <p>A separação analítica entre Tradução (T) e Execução (E) mostrou-se fundamental para distinguir aquilo que pode ser projetado, controlado e auditado daquilo que permanece inerentemente variável e estocástico, evitando expectativas irrealistas de determinismo (<span class="cite" data-ref="Norman1988" tabindex="0">Norman, 1988</span>; <span class="cite" data-ref="Shen2023" tabindex="0">Shen et al., 2023</span>). Para operacionalizar esse enquadramento, o trabalho apresentou dois instrumentos analíticos derivados — a SOP e o GenAI Service Blueprint — concebidos não como frameworks normativos, mas como lentes para descrever e comparar práticas reais de prompting em serviços organizacionais (<span class="cite" data-ref="Bitner2008" tabindex="0">Bitner et al., 2008</span>; <span class="cite" data-ref="Engestrom1987" tabindex="0">Engeström, 1987</span>).</p>
+          <p>O estudo de caso observacional do CPM demonstrou a plausibilidade operacional dessa abordagem, ilustrando como diferentes escolhas arquiteturais — em termos de fricção, governança e autonomia — podem ser institucionalizadas em contextos reais de uso. Sem pretensão de generalização estatística ou prova causal, o caso reforçou que ganhos de previsibilidade, redução de retrabalho e maior clareza de responsabilidade podem emergir quando a tradução é tratada como camada explícita e governada (<span class="cite" data-ref="Engestrom2001" tabindex="0">Engeström, 2001</span>; <span class="cite" data-ref="Bennett2014" tabindex="0">Bennett &amp; Checkel, 2014</span>).</p>
+          <p>Do ponto de vista prático, os resultados sugerem que organizações interessadas em adotar IA generativa de forma responsável devem deslocar investimentos exclusivos em treinamento individual para o design consciente de infraestruturas de tradução, capazes de apoiar externalização de intenção, reduzir variabilidade indesejada e tornar decisões auditáveis. Esse deslocamento não elimina incertezas inerentes à execução probabilística, mas cria condições para reconhecê-las, documentá-las e geri-las de forma explícita.</p>
+          <p>Por fim, o trabalho reconhece limitações importantes. A análise é situada, dependente de um contexto organizacional específico e de instrumentos analíticos que não pretendem esgotar a diversidade de práticas possíveis. Pesquisas futuras podem explorar aplicações da governança da tradução em outros domínios, investigar seus efeitos de longo prazo sobre aprendizagem organizacional e examinar implicações éticas e políticas da centralização de decisões de mediação em sistemas de IA generativa. Ao deslocar o debate de "prompts melhores" para arquiteturas sociotécnicas de tradução governada, este trabalho busca contribuir para uma adoção mais reflexiva, responsável e sustentável da IA generativa em contextos organizacionais.</p>
         </section>
 
+        <!-- ── Anexo A ── -->
+        <section id="anexo-a" aria-labelledby="anexo-a-h">
+          <h2 id="anexo-a-h">Anexo A — Artefatos visuais do CPM (recortes ilustrativos)</h2>
+          <p class="info-note"><strong>Nota de enquadramento:</strong> Por confidencialidade, os metaprompts completos utilizados nas instâncias do CPM não são reproduzidos integralmente. Em seu lugar, apresentamos recortes visuais como artefatos ilustrativos para tornar visível a camada de Tradução (T) em diferentes variações arquiteturais. Esses recortes não pretendem oferecer reprodutibilidade literal nem avaliação de desempenho do modelo; seu papel é evidenciar mecanismos de contrato de interação, scaffolding e governança estrutural.</p>
+
+          <h3>A.1 — Instância baseline (Prompt Assistant)</h3>
+          <p><strong>Figura A1 — Reformulação do objetivo + checklist conceitual (T antes de E)</strong><br>
+          Função SOP predominante: contrato de interação (linha de visibilidade) + orquestração básica (backstage leve). Explicita critérios e formato esperados, reduzindo ambiguidade e facilitando governança da Tradução (T).</p>
+          <p><strong>Figura A2 — Prompt final estruturado (formalização do contrato)</strong><br>
+          Função SOP predominante: contrato de interação + restrições (transição para controle/validação). Torna governável o que foi especificado (T) sem prometer determinismo na Execução (E).</p>
+
+          <h3>A.2 — Instância com fricção deliberada (Prompt Tutor)</h3>
+          <p><strong>Figura A3 — Pergunta 1 (elicitação de intenção)</strong><br>
+          Função SOP predominante: scaffold cognitivo (backstage) + início de contrato de interação (linha de visibilidade). Reduz o Golfo de Envisioning ao forçar explicitação do propósito antes da execução.</p>
+          <p><strong>Figura A4 — Pergunta 2 (estrutura do material)</strong><br>
+          Função SOP predominante: scaffold cognitivo + preparação de orquestração/segmentação. Transforma um pedido monolítico em tarefa decomposta e compatível com limites de contexto.</p>
+
+          <h3>A.3 — Instância de alta governança</h3>
+          <p><strong>Figura A5 — Estratégia hierárquica + exigência de evidências rastreáveis</strong><br>
+          Função SOP predominante: mediação organizacional + orquestração + controle/validação (backstage forte). Exemplifica governança como decisão arquitetural: quando a tarefa é crítica, T incorpora rastreabilidade e restrições.</p>
+          <p><strong>Figura A6 — Workflow explícito (processo de tradução governável)</strong><br>
+          Função SOP predominante: controle/validação + orquestração de execução. Evidência de "prompt como infraestrutura": governança do processo de tradução (T), não do resultado específico em E.</p>
+        </section>
+
+        <!-- ── Anexo B ── -->
+        <section id="anexo-b" aria-labelledby="anexo-b-h">
+          <h2 id="anexo-b-h">Anexo B — Exemplos ilustrativos de Tradução (T) e Execução (E)</h2>
+          <p class="info-note"><strong>Nota metodológica:</strong> Os exemplos apresentados neste anexo têm caráter ilustrativo e visam tornar visível a separação analítica entre Tradução (T) e Execução (E). Eles não constituem evidência de desempenho nem comparação de qualidade entre outputs.</p>
+
+          <h3>B.1 — Input canônico</h3>
+          <div class="cpm-output">
+            <p class="cpm-label">Input canônico utilizado nas três instâncias</p>
+            <p><em>"Preciso medir a similaridade entre procedimentos bancários de atendimento. Os procedimentos são longos. Cada procedimento pode ter mais de 100k caracteres e isso dificulta bastante."</em></p>
+          </div>
+          <p>O input acima é tratado como "canônico" por representar uma classe de tarefas recorrentes em curadoria e padronização organizacional. Ele concentra três fontes típicas de fragilidade em prompting: (i) intenção inicial pouco especificada, (ii) necessidade de critérios verificáveis ("similaridade em que dimensão?") e (iii) restrições de contexto (documentos longos), que exigem decisões de Tradução (T) antes da Execução (E).</p>
+
+          <h3>B.2 — Instância baseline (Prompt Assistant): Tradução (T) como reformulação + contrato</h3>
+          <p><strong>Função SOP predominante:</strong> contrato de interação (linha de visibilidade) + orquestração básica (backstage leve).</p>
+
+          <h4>Saída de Tradução (T): reformulação + scaffolding + plano</h4>
+          <div class="cpm-output">
+            <p class="cpm-label">CPM — Prompt Assistant · Saída de Tradução (T)</p>
+            <p>Perfeito. Vou reformular o seu objetivo em linguagem clara para garantir que vamos criar o prompt ideal:</p>
+            <p>✅ <strong>Objetivo reformulado:</strong> Você quer medir a similaridade entre procedimentos bancários de atendimento, mesmo quando os textos são muito longos (acima de 100 mil caracteres). A ideia é comparar pares de procedimentos e retornar uma medida de similaridade, útil para saber se são essencialmente iguais, parecidos ou distintos.</p>
+            <p>✅ <strong>Checklist conceitual:</strong></p>
+            <ul class="body-list">
+              <li>Dividir o problema: separar a tarefa em etapas que podem ser executadas por um modelo com limite de contexto;</li>
+              <li>Selecionar o tipo de comparação: similaridade semântica, estrutural, por intenção ou passo a passo?</li>
+              <li>Adaptar à limitação de tokens: estratégia para lidar com textos com mais de 100k caracteres;</li>
+              <li>Definir a métrica de saída: escalar (0 a 1), qualitativo ou ambos;</li>
+              <li>Formatar prompt modular: estrutura hierárquica para facilitar adaptações futuras.</li>
+            </ul>
+            <p>🔧 <strong>Plano inicial:</strong> Vamos criar um prompt que recebe dois procedimentos muito longos (divididos ou resumidos), avalia a similaridade considerando os passos, objetivos e decisões, e gera como saída: um escore de similaridade (0 a 1) e uma justificativa textual curta.</p>
+          </div>
+
+          <h4>Contrato gerado (Prompt): especificação para Execução (E)</h4>
+          <div class="code-block scrollable">
+            <button class="copy-btn" aria-label="Copiar contrato">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="copy-text">Copiar</span>
+            </button>
+            <pre><code>## 1. PAPEL
+Você é um analista de processos bancários especializado em comparar procedimentos de
+atendimento ao cliente. Sua função é analisar dois procedimentos extensos e indicar
+o nível de similaridade entre eles, levando em consideração os objetivos, as etapas
+principais, os fluxos de decisão e as instruções operacionais.
+
+## 2. INSTRUÇÕES PASSO A PASSO
+2.1 - Leia atentamente os dois procedimentos fornecidos.
+2.1.1 - Caso os procedimentos sejam muito longos, utilize os resumos ou trechos-chave
+        disponíveis.
+2.1.2 - Compare os dois procedimentos considerando os seguintes critérios:
+  2.1.2.1 - Finalidade e objetivo geral do procedimento.
+  2.1.2.2 - Etapas principais descritas.
+  2.1.2.3 - Fluxos de decisão (condições, ramificações, exceções).
+  2.1.2.4 - Atores envolvidos (quem executa o quê).
+  2.1.2.5 - Ferramentas e sistemas mencionados.
+  2.1.2.6 - Linguagem ou termos técnicos recorrentes.
+2.2 - Atribua um grau de similaridade entre os procedimentos com base nos critérios.
+2.3 - Explique brevemente os principais pontos de similaridade e/ou diferença.
+
+## 3. RESTRIÇÕES
+3.1 - Não copie trechos dos procedimentos, apenas comente sobre sua estrutura.
+3.2 - Mantenha a análise objetiva, concisa e técnica.
+3.3 - A pontuação de similaridade deve estar entre 0 (completamente diferentes) e 1
+      (idênticos em estrutura e objetivo).
+3.4 - Caso os textos estejam em formatos diferentes, isso não deve afetar
+      negativamente a análise, desde que o conteúdo seja equivalente.
+
+## 4. EXEMPLOS
+Procedimento A: Atendimento para cancelamento de cartão de crédito, com verificação
+de identidade, confirmação de saldo devedor, envio de protocolo e bloqueio no sistema.
+Procedimento B: Bloqueio definitivo de cartão, envolvendo autenticação, análise de
+pendências financeiras e registro de protocolo.
+→ Similaridade: 0.89 | Justificativa: Ambos tratam do cancelamento/bloqueio, seguem
+  etapas semelhantes e utilizam o mesmo sistema.
+
+## 5. FORMATO DA SAÍDA
+{
+  "similaridade": 0.XX,
+  "justificativa": "Texto explicativo de até 5 linhas"
+}
+
+## 6. INPUT HUMANO
+Procedimento A: (... inserir resumo ou texto ...)
+Procedimento B: (... inserir resumo ou texto ...)</code></pre>
+          </div>
+
+          <h3>B.3 — Prompt Tutor (fricção deliberada): Tradução (T) por scaffolding de intenção</h3>
+          <p><strong>Função SOP predominante:</strong> scaffold cognitivo (backstage) + contrato de interação (linha de visibilidade). A instância Tutor introduz fricção deliberada ao impor um roteiro de elicitação (3 perguntas) antes de gerar o contrato.</p>
+
+          <h4>Saída de Tradução (T): fricção deliberada por perguntas sequenciais</h4>
+          <div class="cpm-output">
+            <p class="cpm-label">CPM — Prompt Tutor · Scaffold de intenção (3 perguntas)</p>
+            <p>Entendi! Esse é um desafio interessante, principalmente pelo tamanho dos textos. Antes de criar um prompt eficaz, vou fazer apenas <strong>3 perguntas</strong> para entender melhor o contexto.</p>
+            <p><strong>Pergunta 1:</strong> Qual é o resultado específico que você deseja alcançar com essa medição?<br>
+            A) Identificar se dois procedimentos são praticamente iguais (duplicados).<br>
+            B) Encontrar diferenças relevantes entre eles e gerar um resumo comparativo.<br>
+            C) Criar uma métrica numérica (0 a 1) para indicar o grau de similaridade.<br>
+            D) Agrupar procedimentos semelhantes em clusters.</p>
+            <p><em>Usuário: Encontrar oportunidades de unificação entre 1 e mais roteiros.</em></p>
+            <p>Perfeito! Então o objetivo é identificar oportunidades de unificação — não só medir similaridade, mas apontar trechos redundantes e sugerir como consolidá-los.</p>
+            <p><strong>Pergunta 2:</strong> Esses roteiros são estruturados de alguma forma (por exemplo, divididos em etapas, tópicos, títulos) ou são textos corridos?</p>
+            <p><em>Usuário: Em seções, mas nem sempre seguindo o mesmo padrão.</em></p>
+            <p><strong>Pergunta 3:</strong> Qual é o nível de detalhe que você espera na saída?<br>
+            A) Apenas uma lista das seções similares.<br>
+            B) Resumo comparativo com sugestão de versão consolidada.<br>
+            C) Análise detalhada com percentual de similaridade por seção e recomendações.</p>
+            <p><em>Usuário: C.</em></p>
+          </div>
+
+          <h4>Contrato (Prompt) gerado: especificação resultante da elicitação</h4>
+          <div class="code-block scrollable">
+            <button class="copy-btn" aria-label="Copiar contrato">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="copy-text">Copiar</span>
+            </button>
+            <pre><code>### PAPEL
+Você é um especialista em análise de textos complexos e otimização de processos
+bancários. Sua missão é comparar múltiplos procedimentos de atendimento bancário,
+identificar similaridades e redundâncias, e propor oportunidades de unificação.
+
+### INSTRUÇÕES PASSO A PASSO
+1. Receba como entrada dois ou mais procedimentos bancários extensos.
+2. Divida cada procedimento em seções, mesmo que não sigam um padrão uniforme.
+   Use títulos, subtítulos ou quebras lógicas para segmentar.
+3. Compare as seções entre os procedimentos e calcule uma pontuação de similaridade
+   (0 a 1) para cada par de seções.
+4. Liste as seções com alta similaridade (≥ 0,7) e descreva as diferenças relevantes.
+5. Sugira como unificar essas seções em uma versão consolidada.
+6. Gere uma análise detalhada com:
+   - Percentual de similaridade por seção.
+   - Principais redundâncias encontradas.
+   - Recomendações de unificação (com exemplos de texto consolidado).
+7. Se houver seções únicas ou divergentes, destaque e explique se devem ser mantidas.
+
+### RESTRIÇÕES
+- Não omita detalhes importantes do procedimento original.
+- Não invente informações que não estejam nos textos fornecidos.
+- Mantenha linguagem formal e clara, adequada ao contexto bancário.
+- Limite a sugestão consolidada a no máximo 500 palavras por seção.
+
+### FORMATO DA SAÍDA
+Relatório estruturado em Markdown:
+- Resumo geral da similaridade
+- Tabela com seções e pontuação
+- Sugestões de unificação
+- Observações finais</code></pre>
+          </div>
+
+          <h3>B.4 — Instância de alta governança: Tradução (T) como processo governado</h3>
+          <p><strong>Função SOP predominante:</strong> controle e validação + mediação organizacional + orquestração de execução (backstage). Transforma a Tradução (T) em um procedimento explícito: define estratégia (segmentar → estruturar → comparar), impõe restrições (privacidade, não invenção), exige rastreabilidade (IDs/chunks) e formaliza verificações.</p>
+
+          <div class="code-block scrollable">
+            <button class="copy-btn" aria-label="Copiar contrato">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="copy-text">Copiar</span>
+            </button>
+            <pre><code>#### PAPEL
+Você é Procedure_Similarity_Analyst, atuando como analista sênior de processos e
+compliance bancário + especialista em comparação semântica de textos longos.
+Objetivo: medir similaridade entre dois (ou mais) procedimentos de atendimento
+bancário muito longos, identificar equivalências e divergências e produzir um
+relatório rastreável e acionável para Operações, Qualidade e Compliance.
+
+reasoning_effort: high
+verbosity: default
+output_format: json
+enable_metaprompt: yes
+
+#### INSTRUÇÕES PASSO A PASSO
+1) Identifique: domínio (produto/serviço), canal, público, e "o que conta como etapa".
+2) Normalize o conceito de procedimento para uma estrutura canônica:
+   - Objetivo / Escopo
+   - Pré-requisitos / Elegibilidade
+   - Entradas (documentos/dados)
+   - Etapas operacionais (passos numerados)
+   - Decisões/condições (se/então)
+   - Exceções e tratamento de erro
+   - SLAs/prazos
+   - Registros/evidências e auditoria
+   - Alçadas/aprovações
+3) Use estratégia Map-Reduce para documentos extensos:
+   - MAP: transformar chunks em "fatos estruturados" com IDs (A.S01, A.R01...).
+   - REDUCE: consolidar por documento, removendo duplicatas.
+   - COMPARE: alinhar PS_A vs PS_B com classificação por par.
+4) Defina métrica composta (0–1):
+   - Similaridade semântica de temas (S_sem) = 0.35
+   - Similaridade estrutural de etapas (S_step) = 0.45
+   - Similaridade de regras/condições/SLAs (S_rule) = 0.20
+   - Score_final = 0.35*S_sem + 0.45*S_step + 0.20*S_rule
+5) Classifique cada par de etapas:
+   {match_forte, match_parcial, conflita, ausente_em_A, ausente_em_B}
+6) Privacidade: não reproduza documentos inteiros. Citações: máx. 300 chars.
+   Masqueie PII (CPF, conta, telefone, e-mail).
+
+#### RESTRIÇÕES
+- Fontes autorizadas: apenas o texto fornecido pelo usuário.
+- Não usar conhecimento externo para "preencher" lacunas.
+- Não inventar conteúdo; marcar como "evidência insuficiente" quando necessário.
+
+#### FORMATO DA SAÍDA
+{
+  "scope": {"doc_ids": ["A","B"], "assessed_domain": "string"},
+  "scores": {"S_sem": 0.0, "S_step": 0.0, "S_rule": 0.0, "score_final": 0.0},
+  "step_alignment": [{
+    "A_step_id": "A.S01", "B_step_id": "B.S03",
+    "relation": "match_forte|match_parcial|conflita|ausente_em_A|ausente_em_B",
+    "impact": "alto|medio|baixo",
+    "evidence": {"A": [{"chunk_id": "A.C001", "quote": "..."}]}
+  }],
+  "top_divergences": [{"title": "string", "impact": "alto|medio|baixo"}],
+  "risks": [{"risk": "string", "type": "compliance|operacional", "severity": "alta"}],
+  "recommendations": [{"action": "string", "priority": "P0|P1|P2"}],
+  "assumptions_and_limits": ["string"]
+}</code></pre>
+          </div>
+        </section>
+
+        <!-- ── Referências ── -->
         <section id="references" aria-labelledby="references-h">
-          <h2 id="references-h">9. Referências</h2>
+          <h2 id="references-h">Referências</h2>
           <ol class="references-list" id="referencesList"></ol>
         </section>
 
+        <!-- ── BibTeX ── -->
         <section id="bibtex" aria-labelledby="bibtex-h">
-          <h2 id="bibtex-h">10. Citação (BibTeX)</h2>
+          <h2 id="bibtex-h">Citação (BibTeX)</h2>
           <div class="code-block bibtex-block">
             <button class="copy-btn" aria-label="Copiar BibTeX">
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
