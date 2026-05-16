@@ -104,8 +104,7 @@
             </ul>
           </li>
           <li><a href="#sec8" class="toc-link">8. Conclusão</a></li>
-          <li><a href="#anexo-a" class="toc-link">Anexo A — Artefatos CPM</a></li>
-          <li><a href="#anexo-b" class="toc-link">Anexo B — Exemplos T/E</a></li>
+          <li><a href="#anexo-a" class="toc-link">Anexo A — Exemplos T/E</a></li>
           <li><a href="#references" class="toc-link">Referências</a></li>
           <li><a href="#bibtex" class="toc-link">Citação (BibTeX)</a></li>
         </ul>
@@ -328,7 +327,7 @@
 
           <section id="sec3-5" aria-labelledby="sec3-5-h">
             <h3 id="sec3-5-h">3.5 Relação entre SOP e GenAI Service Blueprint</h3>
-            <p>Embora distintos, a SOP e o GenAI Service Blueprint operam de forma complementar. Enquanto a SOP classifica funções de prompts no interior do serviço, o blueprint explicita processos e relações entre camadas, atores e artefatos. Juntos, esses instrumentos permitem analisar não apenas o que os prompts fazem, mas onde e como suas funções se articulam na arquitetura do serviço. No caso do CPM (Seção 5), a SOP e o GenAI Service Blueprint foram usados como lentes para identificar (i) funções predominantes de prompting por instância e (ii) onde a camada de tradução se posiciona entre frontstage e backstage. Recortes ilustrativos de outputs comparáveis para um mesmo input estão nos Anexos B.</p>
+            <p>Embora distintos, a SOP e o GenAI Service Blueprint operam de forma complementar. Enquanto a SOP classifica funções de prompts no interior do serviço, o blueprint explicita processos e relações entre camadas, atores e artefatos. Juntos, esses instrumentos permitem analisar não apenas o que os prompts fazem, mas onde e como suas funções se articulam na arquitetura do serviço. No caso do CPM (Seção 5), a SOP e o GenAI Service Blueprint foram usados como lentes para identificar (i) funções predominantes de prompting por instância e (ii) onde a camada de tradução se posiciona entre frontstage e backstage. Recortes ilustrativos de outputs comparáveis para um mesmo input estão no Anexo A.</p>
           </section>
 
           <section id="sec3-6" aria-labelledby="sec3-6-h">
@@ -469,10 +468,6 @@
                 </tbody>
               </table>
             </div>
-            <figure class="paper-figure">
-              <img src="images/fig-09.png" alt="Implementando a Tradução: O Cognitive Prompt Middleware (CPM)" loading="lazy" width="3440" height="1920">
-              <figcaption>Implementando a Tradução: O Cognitive Prompt Middleware (CPM)</figcaption>
-            </figure>
           </section>
 
           <section id="sec5-6" aria-labelledby="sec5-6-h">
@@ -592,41 +587,17 @@
 
         <!-- ── Anexo A ── -->
         <section id="anexo-a" aria-labelledby="anexo-a-h">
-          <h2 id="anexo-a-h">Anexo A — Artefatos visuais do CPM (recortes ilustrativos)</h2>
-          <p class="info-note"><strong>Nota de enquadramento:</strong> Por confidencialidade, os metaprompts completos utilizados nas instâncias do CPM não são reproduzidos integralmente. Em seu lugar, apresentamos recortes visuais como artefatos ilustrativos para tornar visível a camada de Tradução (T) em diferentes variações arquiteturais. Esses recortes não pretendem oferecer reprodutibilidade literal nem avaliação de desempenho do modelo; seu papel é evidenciar mecanismos de contrato de interação, scaffolding e governança estrutural.</p>
-
-          <h3>A.1 — Instância baseline (Prompt Assistant)</h3>
-          <p><strong>Figura A1 — Reformulação do objetivo + checklist conceitual (T antes de E)</strong><br>
-          Função SOP predominante: contrato de interação (linha de visibilidade) + orquestração básica (backstage leve). Explicita critérios e formato esperados, reduzindo ambiguidade e facilitando governança da Tradução (T).</p>
-          <p><strong>Figura A2 — Prompt final estruturado (formalização do contrato)</strong><br>
-          Função SOP predominante: contrato de interação + restrições (transição para controle/validação). Torna governável o que foi especificado (T) sem prometer determinismo na Execução (E).</p>
-
-          <h3>A.2 — Instância com fricção deliberada (Prompt Tutor)</h3>
-          <p><strong>Figura A3 — Pergunta 1 (elicitação de intenção)</strong><br>
-          Função SOP predominante: scaffold cognitivo (backstage) + início de contrato de interação (linha de visibilidade). Reduz o Golfo de Envisioning ao forçar explicitação do propósito antes da execução.</p>
-          <p><strong>Figura A4 — Pergunta 2 (estrutura do material)</strong><br>
-          Função SOP predominante: scaffold cognitivo + preparação de orquestração/segmentação. Transforma um pedido monolítico em tarefa decomposta e compatível com limites de contexto.</p>
-
-          <h3>A.3 — Instância de alta governança</h3>
-          <p><strong>Figura A5 — Estratégia hierárquica + exigência de evidências rastreáveis</strong><br>
-          Função SOP predominante: mediação organizacional + orquestração + controle/validação (backstage forte). Exemplifica governança como decisão arquitetural: quando a tarefa é crítica, T incorpora rastreabilidade e restrições.</p>
-          <p><strong>Figura A6 — Workflow explícito (processo de tradução governável)</strong><br>
-          Função SOP predominante: controle/validação + orquestração de execução. Evidência de "prompt como infraestrutura": governança do processo de tradução (T), não do resultado específico em E.</p>
-        </section>
-
-        <!-- ── Anexo B ── -->
-        <section id="anexo-b" aria-labelledby="anexo-b-h">
-          <h2 id="anexo-b-h">Anexo B — Exemplos ilustrativos de Tradução (T) e Execução (E)</h2>
+          <h2 id="anexo-a-h">Anexo A — Exemplos ilustrativos de Tradução (T) e Execução (E)</h2>
           <p class="info-note"><strong>Nota metodológica:</strong> Os exemplos apresentados neste anexo têm caráter ilustrativo e visam tornar visível a separação analítica entre Tradução (T) e Execução (E). Eles não constituem evidência de desempenho nem comparação de qualidade entre outputs.</p>
 
-          <h3>B.1 — Input canônico</h3>
+          <h3>A.1 — Input canônico</h3>
           <div class="cpm-output">
             <p class="cpm-label">Input canônico utilizado nas três instâncias</p>
             <p><em>"Preciso medir a similaridade entre procedimentos bancários de atendimento. Os procedimentos são longos. Cada procedimento pode ter mais de 100k caracteres e isso dificulta bastante."</em></p>
           </div>
           <p>O input acima é tratado como "canônico" por representar uma classe de tarefas recorrentes em curadoria e padronização organizacional. Ele concentra três fontes típicas de fragilidade em prompting: (i) intenção inicial pouco especificada, (ii) necessidade de critérios verificáveis ("similaridade em que dimensão?") e (iii) restrições de contexto (documentos longos), que exigem decisões de Tradução (T) antes da Execução (E).</p>
 
-          <h3>B.2 — Instância baseline (Prompt Assistant): Tradução (T) como reformulação + contrato</h3>
+          <h3>A.2 — Instância baseline (Prompt Assistant): Tradução (T) como reformulação + contrato</h3>
           <p><strong>Função SOP predominante:</strong> contrato de interação (linha de visibilidade) + orquestração básica (backstage leve).</p>
 
           <h4>Saída de Tradução (T): reformulação + scaffolding + plano</h4>
@@ -698,7 +669,7 @@ Procedimento A: (... inserir resumo ou texto ...)
 Procedimento B: (... inserir resumo ou texto ...)</code></pre>
           </div>
 
-          <h3>B.3 — Prompt Tutor (fricção deliberada): Tradução (T) por scaffolding de intenção</h3>
+          <h3>A.3 — Prompt Tutor (fricção deliberada): Tradução (T) por scaffolding de intenção</h3>
           <p><strong>Função SOP predominante:</strong> scaffold cognitivo (backstage) + contrato de interação (linha de visibilidade). A instância Tutor introduz fricção deliberada ao impor um roteiro de elicitação (3 perguntas) antes de gerar o contrato.</p>
 
           <h4>Saída de Tradução (T): fricção deliberada por perguntas sequenciais</h4>
@@ -760,7 +731,7 @@ Relatório estruturado em Markdown:
 - Observações finais</code></pre>
           </div>
 
-          <h3>B.4 — Instância de alta governança: Tradução (T) como processo governado</h3>
+          <h3>A.4 — Instância de alta governança: Tradução (T) como processo governado</h3>
           <p><strong>Função SOP predominante:</strong> controle e validação + mediação organizacional + orquestração de execução (backstage). Transforma a Tradução (T) em um procedimento explícito: define estratégia (segmentar → estruturar → comparar), impõe restrições (privacidade, não invenção), exige rastreabilidade (IDs/chunks) e formaliza verificações.</p>
 
           <div class="code-block scrollable">
