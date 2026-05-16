@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pré-print acadêmico: Governança da tradução em sistemas de IA generativa — Roc de Castro, 2026.">
+  <meta property="og:title" content="Governança da tradução em sistemas de IA generativa">
+  <meta property="og:description" content="Design de serviço e HCI para interações baseadas em prompts. Pesquisa independente em andamento.">
+  <meta property="og:type" content="article">
+  <title>Governança da tradução em sistemas de IA generativa — Roc de Castro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="topbar" role="navigation" aria-label="Barra de navegação">
+    <div class="topbar-inner">
+      <span class="topbar-label">Pré-print · 2026</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro/claro">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="layout">
+
+    <aside class="toc-sidebar" id="tocSidebar">
+      <div class="toc-header">
+        <button class="toc-toggle" id="tocToggle" aria-expanded="false" aria-controls="tocNav">
+          <span>Sumário</span>
+          <svg class="toc-chevron" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+      <nav class="toc-nav collapsed" id="tocNav" aria-label="Sumário do artigo">
+        <ul class="toc-list">
+          <li><a href="#abstract" class="toc-link">Abstract</a></li>
+          <li><a href="#sec1" class="toc-link">1. Introdução</a></li>
+          <li>
+            <a href="#sec2" class="toc-link">2. Enquadramento teórico</a>
+            <ul class="toc-sub">
+              <li><a href="#sec2-1" class="toc-link">2.1 Prompting como prática HCI</a></li>
+              <li><a href="#sec2-2" class="toc-link">2.2 Golfo de Envisioning</a></li>
+            </ul>
+          </li>
+          <li><a href="#sec3" class="toc-link">3. Instrumentos analíticos</a></li>
+          <li><a href="#sec4" class="toc-link">4. Capacidades técnicas</a></li>
+          <li><a href="#sec5" class="toc-link">5. Estudo de caso: CPM</a></li>
+          <li><a href="#sec6" class="toc-link">6. Evidências e protocolo</a></li>
+          <li><a href="#sec7" class="toc-link">7. Discussão e trade-offs</a></li>
+          <li><a href="#sec8" class="toc-link">8. Conclusão</a></li>
+          <li><a href="#references" class="toc-link">9. Referências</a></li>
+          <li><a href="#bibtex" class="toc-link">10. Citação (BibTeX)</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="article" id="main-content">
+
+      <header class="article-header">
+        <div class="status-badge" role="note">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Pré-print · Pesquisa independente em andamento
+        </div>
+        <h1 class="article-title">
+          Governança da tradução em sistemas de IA generativa: design de serviço e HCI para interações baseadas em prompts
+        </h1>
+        <div class="article-meta">
+          <span class="meta-author">Roc de Castro</span>
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <time class="meta-date" datetime="2026">2026</time>
+        </div>
+        <div class="index-terms" role="list" aria-label="Index terms">
+          <span class="index-terms-label">Index Terms</span>
+          <span class="term-tag" role="listitem">IA generativa</span>
+          <span class="term-tag" role="listitem">engenharia de prompts</span>
+          <span class="term-tag" role="listitem">governança da GenAI</span>
+          <span class="term-tag" role="listitem">design de serviço</span>
+          <span class="term-tag" role="listitem">sistemas sociotécnicos</span>
+          <span class="term-tag" role="listitem">interação humano-computador</span>
+        </div>
+      </header>
+
+      <section class="abstract-section" id="abstract" aria-labelledby="abstract-label">
+        <h2 class="abstract-label" id="abstract-label">Abstract</h2>
+        <div class="abstract-body">
+          <p>A ascensão da Inteligência Artificial Generativa (GenAI) marca uma descontinuidade relevante na história da Interação Humano-Computador (HCI): a linguagem natural deixa de ser apenas meio de comunicação inter-humana e passa a operar como mecanismo primário de controle computacional e orquestração de serviços. Nesse paradigma, a qualidade do que se obtém de um modelo não é determinada exclusivamente por "capacidade" do modelo, mas também pela qualidade da instrução que conecta intenção humana a execução probabilística, isto é, pela engenharia de prompts.</p>
+          <p>No entanto, quando tratada predominantemente como habilidade textual ou competência individual, essa prática mostra-se insuficiente para sustentar escalabilidade, governança e responsabilização em sistemas sociotécnicos organizacionais. Este trabalho argumenta que a engenharia de prompts deve ser reformulada como um problema arquitetural e sociotécnico, no qual a <strong>governança da tradução</strong> assume papel central no uso organizacional de GenAI.</p>
+          <p>Propõe-se uma separação explícita entre <strong>Tradução (T)</strong> — camada governável na qual intenções são interpretadas, estruturadas e restringidas — e <strong>Execução (E)</strong> — a geração probabilística realizada por modelos de linguagem. A distinção permite analisar com maior precisão o que pode ser projetado, controlado e auditado em sistemas baseados em prompts, sem confundir decisões arquiteturais com variabilidade de output.</p>
+          <p>Para operacionalizar esse enquadramento, o trabalho apresenta dois instrumentos analíticos derivados: a <strong>Taxonomia de Prompt Orientada a Serviço (SOP)</strong> e o <strong>GenAI Service Blueprint</strong>, que classificam prompts por função no serviço e tornam visível a camada de tradução que media a relação entre usuários, organização e modelos. O argumento é ancorado em um estudo de caso observacional de um Cognitive Prompt Middleware (CPM) implementado como agente em ambiente corporativo, incluindo uma instância baseline (Prompt Assistant) e variações arquiteturais com diferentes níveis de fricção e governança.</p>
+          <p>Sem pretensão de prova causal, o caso demonstra a plausibilidade operacional de institucionalizar a tradução como camada governada, tornando explícitos trade-offs entre controle, autonomia e previsibilidade em serviços organizacionais baseados em GenAI.</p>
+        </div>
+      </section>
+
+      <div class="article-body">
+
+        <section id="sec1" aria-labelledby="sec1-h">
+          <h2 id="sec1-h">1. Introdução</h2>
+          <p class="placeholder-text">[Conteúdo a preencher]</p>
+          <p class="cite-demo"><em>Demonstração do sistema de citação — passe o cursor sobre as referências inline:</em> A relação entre intenção humana e output computacional é mediada por sistemas de signos que implicam design intencional <span class="cite" data-ref="Norman1988" tabindex="0">(Norman, 1988)</span>. O desalinhamento entre o que o usuário imagina e o que o sistema consegue produzir foi formalizado como Golfo de Envisioning no contexto de interações com LLMs <span class="cite" data-ref="Shen2023" tabindex="0">(Shen et al., 2023)</span>. Service blueprinting oferece uma técnica para tornar visível a camada oculta de mediação em serviços <span class="cite" data-ref="Bitner2008" tabindex="0">(Bitner et al., 2008)</span>.</p>
+        </section>
+
+        <section id="sec2" aria-labelledby="sec2-h">
+          <h2 id="sec2-h">2. Enquadramento teórico: prompting como interação sociotécnica</h2>
+          <section id="sec2-1" aria-labelledby="sec2-1-h">
+            <h3 id="sec2-1-h">2.1 Prompting como prática de interação em HCI</h3>
+            <p class="placeholder-text">[Conteúdo a preencher]</p>
+          </section>
+          <section id="sec2-2" aria-labelledby="sec2-2-h">
+            <h3 id="sec2-2-h">2.2 O Golfo de Envisioning e as lacunas de mediação</h3>
+            <p class="placeholder-text">[Conteúdo a preencher]</p>
+          </section>
+        </section>
+
+        <section id="sec3" aria-labelledby="sec3-h">
+          <h2 id="sec3-h">3. Instrumentos analíticos: SOP e GenAI Service Blueprint</h2>
+          <p class="placeholder-text">[Conteúdo a preencher]</p>
+
+          <h3>Tabela 1 — Taxonomia de Prompt Orientada a Serviço (SOP)</h3>
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Tipo de Prompt</th>
+                  <th>Função no Serviço</th>
+                  <th>Camada T/E</th>
+                  <th>Visibilidade ao Usuário</th>
+                  <th>Auditabilidade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>System Prompt</strong></td>
+                  <td>Definição de persona, restrições e escopo do agente</td>
+                  <td>T</td>
+                  <td>Oculto</td>
+                  <td>Alta (versionável)</td>
+                </tr>
+                <tr>
+                  <td><strong>Prompt de Orquestração</strong></td>
+                  <td>Sequência e lógica de chamadas entre componentes</td>
+                  <td>T</td>
+                  <td>Oculto</td>
+                  <td>Alta</td>
+                </tr>
+                <tr>
+                  <td><strong>Prompt de Usuário</strong></td>
+                  <td>Instrução direta do utilizador final</td>
+                  <td>E (entrada)</td>
+                  <td>Explícito</td>
+                  <td>Média (logs)</td>
+                </tr>
+                <tr>
+                  <td><strong>Meta-prompt</strong></td>
+                  <td>Instrução sobre como estruturar outras instruções</td>
+                  <td>T</td>
+                  <td>Parcialmente oculto</td>
+                  <td>Alta</td>
+                </tr>
+                <tr>
+                  <td><strong>Prompt de Validação</strong></td>
+                  <td>Checagem de conformidade de outputs</td>
+                  <td>T</td>
+                  <td>Oculto</td>
+                  <td>Alta</td>
+                </tr>
+                <tr>
+                  <td><strong>Prompt de Recuperação (RAG)</strong></td>
+                  <td>Injeção de contexto via retrieval</td>
+                  <td>T</td>
+                  <td>Oculto</td>
+                  <td>Média</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="sec4" aria-labelledby="sec4-h">
+          <h2 id="sec4-h">4. Capacidades e limites técnicos relevantes para governança</h2>
+          <p class="placeholder-text">[Conteúdo a preencher]</p>
+        </section>
+
+        <section id="sec5" aria-labelledby="sec5-h">
+          <h2 id="sec5-h">5. Estudo de caso: Cognitive Prompt Middleware (CPM)</h2>
+          <p class="placeholder-text">[Conteúdo a preencher]</p>
+
+          <h3>Exemplo — System prompt do Prompt Assistant (instância baseline)</h3>
+          <div class="code-block">
+            <button class="copy-btn" aria-label="Copiar código">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="copy-text">Copiar</span>
+            </button>
+            <pre><code># Papel
+Você é um assistente especializado em otimização de prompts para modelos de linguagem
+de grande escala (LLMs). Seu papel é apoiar profissionais a estruturar, melhorar e
+governar prompts utilizados em contextos organizacionais.
+
+# Escopo
+- Analise o prompt fornecido pelo usuário
+- Identifique lacunas de especificidade, ambiguidades e riscos de output não determinístico
+- Proponha uma versão estruturada com: papel, contexto, instrução, formato de saída
+  e restrições
+- Classifique o prompt na Taxonomia SOP (System / Orchestration / User / Meta / Validation)
+
+# Restrições
+- Não execute a tarefa descrita no prompt — apenas otimize a instrução
+- Mantenha a intenção original do usuário; não substitua objetivos
+- Sinalize quando um prompt solicitar capacidades além do escopo do modelo
+
+# Formato de saída
+Retorne um objeto JSON com os campos:
+{
+  "tipo_sop": "[classificação SOP]",
+  "lacunas_identificadas": ["..."],
+  "prompt_otimizado": "...",
+  "justificativa": "..."
+}</code></pre>
+          </div>
+
+          <h3>Exemplo — Output estruturado do CPM</h3>
+          <div class="code-block">
+            <button class="copy-btn" aria-label="Copiar código">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="copy-text">Copiar</span>
+            </button>
+            <pre><code>{
+  "tipo_sop": "User → otimizado para System",
+  "lacunas_identificadas": [
+    "Ausência de papel explícito para o modelo",
+    "Formato de saída não especificado",
+    "Nenhuma restrição de escopo definida"
+  ],
+  "prompt_otimizado": "Você é um analista de dados sênior. Dado o conjunto de dados
+    CSV fornecido, gere um relatório executivo em português com: (1) principais
+    tendências, (2) anomalias detectadas, (3) recomendações priorizadas. Formato:
+    JSON com campos 'tendencias', 'anomalias', 'recomendacoes'. Limite: 500 palavras
+    por campo.",
+  "justificativa": "O prompt original ('analise esses dados') carecia de papel,
+    formato e escopo. A versão otimizada reduz variabilidade de output e torna o
+    resultado auditável."
+}</code></pre>
+          </div>
+        </section>
+
+        <section id="sec6" aria-labelledby="sec6-h">
+          <h2 id="sec6-h">6. Evidências aplicadas e protocolo de validação</h2>
+          <p class="placeholder-text">[Conteúdo a preencher]</p>
+        </section>
+
+        <section id="sec7" aria-labelledby="sec7-h">
+          <h2 id="sec7-h">7. Discussão, implicações e trade-offs</h2>
+          <p class="placeholder-text">[Conteúdo a preencher]</p>
+        </section>
+
+        <section id="sec8" aria-labelledby="sec8-h">
+          <h2 id="sec8-h">8. Conclusão</h2>
+          <p class="placeholder-text">[Conteúdo a preencher]</p>
+        </section>
+
+        <section id="references" aria-labelledby="references-h">
+          <h2 id="references-h">9. Referências</h2>
+          <ol class="references-list" id="referencesList"></ol>
+        </section>
+
+        <section id="bibtex" aria-labelledby="bibtex-h">
+          <h2 id="bibtex-h">10. Citação (BibTeX)</h2>
+          <div class="code-block bibtex-block">
+            <button class="copy-btn" aria-label="Copiar BibTeX">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="copy-text">Copiar</span>
+            </button>
+            <pre><code>@unpublished{decastro2026governanca,
+  author = {de Castro, Roc},
+  title  = {Governança da tradução em sistemas de IA generativa: design de serviço
+            e HCI para interações baseadas em prompts},
+  note   = {Pré-print. Pesquisa independente em andamento},
+  year   = {2026},
+  url    = {}
+}</code></pre>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <div class="citation-popover" id="citationPopover" role="tooltip" hidden>
+    <div class="popover-inner">
+      <p class="popover-text" id="popoverText"></p>
+      <a class="popover-link" id="popoverLink" href="#" target="_blank" rel="noopener noreferrer">Ver referência →</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
