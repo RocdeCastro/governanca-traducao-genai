@@ -34,7 +34,7 @@ const REFS = [
   },
   {
     id: 'HPT2024',
-    text: 'Hierarchical Prompting Taxonomy. (2024). <em>arXiv</em>.',
+    text: 'Budagam, R., et al. (2024). Hierarchical Prompting Taxonomy. <em>arXiv</em>.',
     url: 'https://arxiv.org/abs/2406.12644'
   },
   {
