@@ -357,6 +357,9 @@ section[id],
   grid-template-columns: repeat(3, 1fr);
   gap: .85rem;
 }
+@media (max-width: 600px) {
+  .medium-cards { grid-template-columns: 1fr; }
+}
 .medium-card {
   display: flex;
   flex-direction: column;
