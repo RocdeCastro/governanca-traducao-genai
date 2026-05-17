@@ -338,6 +338,67 @@ section[id],
   color: var(--accent);
 }
 
+/* ── Medium aplicações ── */
+.medium-aplicacoes {
+  margin-bottom: 2rem;
+}
+.medium-aplicacoes-label {
+  font-family: var(--sans);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: .9rem;
+}
+.medium-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .85rem;
+}
+.medium-card {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  padding: 1rem 1.15rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-light);
+  border-radius: var(--rm);
+  text-decoration: none;
+  transition: background var(--tr), border-color var(--tr), box-shadow var(--tr);
+}
+.medium-card:hover {
+  background: var(--surface);
+  border-color: var(--border);
+  box-shadow: var(--shadow-md);
+}
+.medium-card-tag {
+  font-family: var(--sans);
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.medium-card-title {
+  font-family: var(--serif);
+  font-size: .92rem;
+  line-height: 1.45;
+  color: var(--text);
+  font-weight: 500;
+}
+.medium-card-link {
+  font-family: var(--sans);
+  font-size: .72rem;
+  color: var(--link);
+  margin-top: auto;
+  padding-top: .4rem;
+}
+.medium-card:hover .medium-card-link {
+  color: var(--link-hover);
+}
+
 /* ── Abstract ── */
 .abstract-section {
   background: var(--bg-alt);
