@@ -19,7 +19,7 @@ const REFS = [
   },
   {
     id: 'Subramonyam2024',
-    text: 'Subramonyam, H., et al. (2024). Bridging the Gulf of Envisioning: Cognitive challenges in prompt-based interactions with large language models. <em>Proceedings of CHI 2024</em>.',
+    text: 'Subramonyam, H., Pea, R., Pondoc, C., Agrawala, M., &amp; Seifert, C. (2024). Bridging the Gulf of Envisioning: Cognitive Challenges in Prompt-Based Interactions with LLMs. <em>CHI 2024</em>.',
     url: 'https://arxiv.org/abs/2309.14459'
   },
   {
