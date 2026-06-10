@@ -18,8 +18,8 @@ const REFS = [
     url: 'https://www.tandfonline.com/doi/abs/10.1080/13639080123238'
   },
   {
-    id: 'Shen2023',
-    text: 'Shen, Y., et al. (2023). Bridging the Gulf of Envisioning: Cognitive challenges in prompt-based interactions with large language models. <em>arXiv</em>.',
+    id: 'Subramonyam2024',
+    text: 'Subramonyam, H., et al. (2024). Bridging the Gulf of Envisioning: Cognitive challenges in prompt-based interactions with large language models. <em>Proceedings of CHI 2024</em>.',
     url: 'https://arxiv.org/abs/2309.14459'
   },
   {
