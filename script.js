@@ -41,6 +41,11 @@ const REFS = [
     id: 'Bennett2014',
     text: 'Bennett, A., &amp; Checkel, J. T. (2014). <em>Process tracing and the social sciences</em>. Cambridge University Press.',
     url: 'https://www.cambridge.org/core/books/process-tracing/5BBC24CBF2E89114817741D0476C07A9'
+  },
+  {
+    id: 'Elovic2025',
+    text: 'Elovic, A., &amp; Chase, H. (2025). <em>The Hidden Metric That Determines AI Product Success</em>. LangChain Blog.',
+    url: 'https://blog.langchain.com/the-hidden-metric-that-determines-ai-product-success/'
   }
 ];
 
